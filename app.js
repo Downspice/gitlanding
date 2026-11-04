@@ -5,69 +5,91 @@
  */
 
 // 1. PROFILE README RAW MARKDOWN TEMPLATE
-const GITHUB_PROFILE_README = `# Hi there, I'm Joseph Awer 👋 
-### Full-Stack TypeScript Engineer • Scalable Systems Architect
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,15,36,20&height=200&section=header&text=Joseph%20Awer%20(@Downspice)&fontSize=38&fontAlign=50&fontAlignY=45&fontColor=ffffff&desc=Building%20Robust%20Cloud%20Platforms%20%26%20Type-Safe%20Ecosystems&descSize=18&descAlign=50&descAlignY=70" width="100%" alt="Header Banner" />
-</p>
-
-<p align="center">
+const GITHUB_PROFILE_README = `<div align="center">
+  <!-- ANIMATED HERO BANNER -->
   <a href="https://github.com/Downspice">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1000&color=64D2FF&center=true&vCenter=true&width=550&lines=Full-Stack+TypeScript+Engineer;Architecting+Scalable+Cloud+Microservices;Building+Enterprise+HR+%26+Ticketing+Platforms;Accessibility+Advocate+%26+Open+Source+Builder" alt="Typing SVG" />
+    <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/hero-banner.svg" width="100%" alt="Joseph Awer (@Downspice) - Full-Stack TypeScript Engineer" />
   </a>
-</p>
+</div>
 
----
+<br/>
 
-### 💫 About Me
+<!-- ANIMATED LASER DIVIDER -->
+<img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/animated-divider.svg" width="100%" alt="Divider" />
 
-- 🔭 Currently building and architecting **[awer-ticketing](https://github.com/Downspice/awer-ticketing)** & modern enterprise platforms.
-- ⚡ 28+ of my 37 GitHub repositories are built with **TypeScript** — obsessed with end-to-end type safety, clean code, and solid system design.
-- 🎯 Created **[alphaworld](https://github.com/Downspice/alphaworld)**, an accessibility-first project designed to help dyslexic children learn alphabets with special UI principles.
-- 💬 Ask me about **TypeScript**, **Next.js**, **Node.js REST/GraphQL architectures**, and **Microservices**.
-- 📫 Reach me on GitHub: [@Downspice](https://github.com/Downspice)
+<br/>
 
----
+### 💫 About Joseph Awer
 
-### 📊 GitHub Analytics & Streak
+\`\`\`typescript
+const engineer = {
+  name: "Joseph Awer",
+  handle: "@Downspice",
+  location: "Global 🌍",
+  currentFocus: ["awer-ticketing", "awer-hr-backend", "enterprise microservices"],
+  coreStack: {
+    language: "TypeScript (85%+)",
+    frontend: ["React.js", "Next.js", "Tailwind CSS", "Zustand"],
+    backend: ["Node.js", "Express.js", "PostgreSQL", "Prisma ORM", "Docker"],
+    architecture: ["Clean Architecture", "RESTful APIs", "Microservices", "RBAC"]
+  },
+  mission: "Architecting resilient, type-safe digital platforms with exceptional user experience"
+};
+\`\`\`
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Downspice&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Downspice's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Downspice&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Top Languages" />
-</p>
+<br/>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Downspice&theme=tokyonight&hide_border=true&background=0D1117" alt="Downspice's GitHub Streak" />
-</p>
+<!-- ANIMATED STATS BENTO -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/stats-bento.svg" width="100%" alt="Downspice GitHub Analytics" />
+</div>
 
----
+<br/>
+
+<!-- ANIMATED LASER DIVIDER -->
+<img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/animated-divider.svg" width="100%" alt="Divider" />
+
+<br/>
 
 ### 🛠️ Technical Arsenal
 
-| Domain | Technologies |
-| :--- | :--- |
-| **Languages** | \`TypeScript\`, \`JavaScript (ESNext)\`, \`C#\`, \`C++\`, \`SQL\`, \`HTML5/CSS3\` |
-| **Frontend** | \`React.js\`, \`Next.js\`, \`Tailwind CSS\`, \`Vite\`, \`Zustand\`, \`Redux Toolkit\` |
-| **Backend & Cloud** | \`Node.js\`, \`Express.js\`, \`PostgreSQL\`, \`Prisma ORM\`, \`RESTful APIs\`, \`JWT Auth\` |
-| **DevOps & Tooling** | \`Git\`, \`GitHub Actions\`, \`Docker\`, \`Linux CLI\`, \`Vitest\`, \`Postman\` |
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/tech-matrix.svg" width="100%" alt="Technical Skills Matrix" />
+</div>
 
----
+<br/>
 
-### 🚀 Highlighted Repositories
+<!-- ANIMATED LASER DIVIDER -->
+<img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/animated-divider.svg" width="100%" alt="Divider" />
 
-- 🎫 **[awer-ticketing](https://github.com/Downspice/awer-ticketing)** — Production-grade event and customer ticketing engine with real-time lifecycle status.
-- 👥 **[awer-hr-backend](https://github.com/Downspice/awer-hr-backend)** — Enterprise HR and employee directory backend service with role-based access control.
-- 🎓 **[ug-alumnisphere](https://github.com/Downspice/ug-alumnisphere-frontend)** — Community mentoring and alumni networking platform.
-- 🧭 **[advisory-portal](https://github.com/Downspice/advisory-portal)** — Interactive advisory management portal with automated scheduling.
-- 🎮 **[alphaworld](https://github.com/Downspice/alphaworld)** — Accessible learning game tailored for dyslexic children.
+<br/>
 
----
+### 🚀 Highlighted Repositories & Systems
 
-<p align="center">
-  <sub>⭐ Designed with love & type safety. Feel free to connect or star my repos!</sub>
-</p>
-`;
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/projects-bento.svg" width="100%" alt="Featured Repositories" />
+</div>
+
+<br/>
+
+<!-- ANIMATED LASER DIVIDER -->
+<img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/animated-divider.svg" width="100%" alt="Divider" />
+
+<br/>
+
+### 💬 Connect & Collaborate
+
+<div align="center">
+  <a href="https://github.com/Downspice">
+    <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/social-bar.svg" width="100%" alt="Connect with Downspice" />
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <sub>⚡ Designed with type safety &amp; vector precision. Star or fork to support!</sub>
+</div>`;
 
 document.addEventListener('DOMContentLoaded', () => {
   // Populate raw markdown view

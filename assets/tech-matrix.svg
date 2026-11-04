@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0b0f19" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="glowTs" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3178c6"/>
+      <stop offset="100%" stop-color="#235a97"/>
+    </linearGradient>
+
+    <linearGradient id="glowReact" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d8ff"/>
+      <stop offset="100%" stop-color="#008cb3"/>
+    </linearGradient>
+
+    <linearGradient id="glowNode" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+
+    <linearGradient id="glowDocker" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'SFMono-Regular', Consolas, Menlo, monospace; }
+
+    @keyframes pillHover {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+
+    .col-1 { animation: pillHover 5s ease-in-out infinite; }
+    .col-2 { animation: pillHover 5.5s ease-in-out infinite 0.5s; }
+    .col-3 { animation: pillHover 6s ease-in-out infinite 1s; }
+    .col-4 { animation: pillHover 5.2s ease-in-out infinite 1.5s; }
+
+    .cluster-card {
+      transition: all 0.3s ease;
+    }
+  </style>
+
+  <rect width="900" height="240" rx="16" fill="#090d16" stroke="#1e293b" stroke-width="1.2"/>
+
+  <!-- COLUMN 1: LANGUAGES -->
+  <g class="col-1" transform="translate(25, 20)">
+    <rect width="195" height="200" rx="14" fill="url(#cardBg)" stroke="#3178c6" stroke-opacity="0.3" stroke-width="1" filter="url(#softShadow)"/>
+    <g transform="translate(16, 20)">
+      <circle cx="10" cy="10" r="10" fill="#3178c6" fill-opacity="0.2"/>
+      <text x="10" y="14" font-size="11" fill="#60a5fa" text-anchor="middle">⚡</text>
+      <text x="28" y="14" font-size="13" font-weight="700" fill="#f8fafc" class="font-sans">LANGUAGES</text>
+    </g>
+
+    <g transform="translate(16, 55)">
+      <!-- Item 1: TypeScript -->
+      <g transform="translate(0, 0)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.6" stroke="#3178c6" stroke-width="1"/>
+        <text x="12" y="19" font-size="12" font-weight="700" fill="#60a5fa" class="font-sans">TypeScript</text>
+        <text x="150" y="19" font-size="10" font-weight="700" fill="#3b82f6" text-anchor="end" class="font-mono">85%+</text>
+      </g>
+      <!-- Item 2: JavaScript -->
+      <g transform="translate(0, 36)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#fef08a" class="font-sans">JavaScript (ES6+)</text>
+      </g>
+      <!-- Item 3: C# & C++ -->
+      <g transform="translate(0, 72)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#cbd5e1" class="font-sans">C# • C++</text>
+      </g>
+      <!-- Item 4: SQL & HTML/CSS -->
+      <g transform="translate(0, 108)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#94a3b8" class="font-sans">PostgreSQL / SQL</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- COLUMN 2: FRONTEND -->
+  <g class="col-2" transform="translate(240, 20)">
+    <rect width="195" height="200" rx="14" fill="url(#cardBg)" stroke="#00d8ff" stroke-opacity="0.3" stroke-width="1" filter="url(#softShadow)"/>
+    <g transform="translate(16, 20)">
+      <circle cx="10" cy="10" r="10" fill="#00d8ff" fill-opacity="0.2"/>
+      <text x="10" y="14" font-size="11" fill="#38bdf8" text-anchor="middle">🎨</text>
+      <text x="28" y="14" font-size="13" font-weight="700" fill="#f8fafc" class="font-sans">FRONTEND</text>
+    </g>
+
+    <g transform="translate(16, 55)">
+      <!-- Item 1: React.js -->
+      <g transform="translate(0, 0)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.6" stroke="#00d8ff" stroke-width="1"/>
+        <text x="12" y="19" font-size="12" font-weight="700" fill="#38bdf8" class="font-sans">React.js</text>
+        <text x="150" y="19" font-size="10" font-weight="600" fill="#0284c7" text-anchor="end" class="font-mono">SPA</text>
+      </g>
+      <!-- Item 2: Next.js -->
+      <g transform="translate(0, 36)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#f8fafc" class="font-sans">Next.js (SSR / App)</text>
+      </g>
+      <!-- Item 3: Tailwind CSS -->
+      <g transform="translate(0, 72)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#2dd4bf" class="font-sans">Tailwind CSS</text>
+      </g>
+      <!-- Item 4: State Management -->
+      <g transform="translate(0, 108)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#94a3b8" class="font-sans">Redux • Zustand</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- COLUMN 3: BACKEND & APIS -->
+  <g class="col-3" transform="translate(455, 20)">
+    <rect width="195" height="200" rx="14" fill="url(#cardBg)" stroke="#22c55e" stroke-opacity="0.3" stroke-width="1" filter="url(#softShadow)"/>
+    <g transform="translate(16, 20)">
+      <circle cx="10" cy="10" r="10" fill="#22c55e" fill-opacity="0.2"/>
+      <text x="10" y="14" font-size="11" fill="#4ade80" text-anchor="middle">⚙️</text>
+      <text x="28" y="14" font-size="13" font-weight="700" fill="#f8fafc" class="font-sans">BACKEND</text>
+    </g>
+
+    <g transform="translate(16, 55)">
+      <!-- Item 1: Node.js -->
+      <g transform="translate(0, 0)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.6" stroke="#22c55e" stroke-width="1"/>
+        <text x="12" y="19" font-size="12" font-weight="700" fill="#4ade80" class="font-sans">Node.js</text>
+        <text x="150" y="19" font-size="10" font-weight="600" fill="#16a34a" text-anchor="end" class="font-mono">Runtime</text>
+      </g>
+      <!-- Item 2: Express.js -->
+      <g transform="translate(0, 36)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#cbd5e1" class="font-sans">Express.js (REST)</text>
+      </g>
+      <!-- Item 3: Prisma ORM -->
+      <g transform="translate(0, 72)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#a78bfa" class="font-sans">Prisma ORM</text>
+      </g>
+      <!-- Item 4: Auth & Microservices -->
+      <g transform="translate(0, 108)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#94a3b8" class="font-sans">JWT • Microservices</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- COLUMN 4: DEVOPS & TOOLS -->
+  <g class="col-4" transform="translate(670, 20)">
+    <rect width="195" height="200" rx="14" fill="url(#cardBg)" stroke="#0284c7" stroke-opacity="0.3" stroke-width="1" filter="url(#softShadow)"/>
+    <g transform="translate(16, 20)">
+      <circle cx="10" cy="10" r="10" fill="#0284c7" fill-opacity="0.2"/>
+      <text x="10" y="14" font-size="11" fill="#38bdf8" text-anchor="middle">🚀</text>
+      <text x="28" y="14" font-size="13" font-weight="700" fill="#f8fafc" class="font-sans">DEVOPS &amp; OPS</text>
+    </g>
+
+    <g transform="translate(16, 55)">
+      <!-- Item 1: Docker -->
+      <g transform="translate(0, 0)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.6" stroke="#0284c7" stroke-width="1"/>
+        <text x="12" y="19" font-size="12" font-weight="700" fill="#38bdf8" class="font-sans">Docker</text>
+        <text x="150" y="19" font-size="10" font-weight="600" fill="#0284c7" text-anchor="end" class="font-mono">Containers</text>
+      </g>
+      <!-- Item 2: Git & GitHub Actions -->
+      <g transform="translate(0, 36)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#f87171" class="font-sans">Git • GitHub Actions</text>
+      </g>
+      <!-- Item 3: Linux & Shell -->
+      <g transform="translate(0, 72)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#fbbf24" class="font-sans">Linux / Bash CLI</text>
+      </g>
+      <!-- Item 4: Vitest & Postman -->
+      <g transform="translate(0, 108)">
+        <rect width="163" height="30" rx="8" fill="#1e293b" fill-opacity="0.4"/>
+        <text x="12" y="19" font-size="12" font-weight="600" fill="#94a3b8" class="font-sans">Vitest • Postman</text>
+      </g>
+    </g>
+  </g>
+</svg>
