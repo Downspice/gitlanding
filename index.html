@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph Awer (Downspice) — Git Profile Landing</title>
+  <meta name="description" content="Aesthetic developer portfolio and Git landing page for Joseph Awer (Downspice) — Full-Stack TypeScript Engineer & Open Source Developer.">
+  <meta property="og:title" content="Joseph Awer (@Downspice) — Git Profile">
+  <meta property="og:description" content="Explore repositories, live GitHub stats, technical arsenal, and developer profile for Joseph Awer.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/67798618?v=4">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Aurora Glow Canvas / Gradients -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-cyan"></div>
+    <div class="glow-orb glow-purple"></div>
+    <div class="glow-orb glow-emerald"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" role="banner">
+    <div class="container nav-content">
+      <a href="#hero" class="brand-link" aria-label="Downspice home">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Downspice</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#terminal" class="nav-item">Terminal</a>
+        <a href="#stack" class="nav-item">Stack</a>
+        <a href="#projects" class="nav-item">Repositories</a>
+        <a href="#readme-preview" class="nav-item">Profile README</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Downspice" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost nav-github-btn">
+          <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="#readme-preview" class="btn btn-sm btn-primary">
+          <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Get README</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-label">Available for TypeScript & Full-Stack Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Joseph Awer</span>
+          </h1>
+
+          <div class="typewriter-container" aria-live="polite">
+            <span class="terminal-prompt">$</span>
+            <span id="typewriter" class="typewriter-text">Full-Stack TypeScript Engineer</span>
+            <span class="cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-description">
+            Building robust web platforms, modern cloud architectures, and developer-centric experiences. 
+            Passionate about type safety, scalable microservices, and clean UI interfaces.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>View Repositories</span>
+              <svg class="icon arrow-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#terminal" class="btn btn-outline btn-lg">
+              <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span>Launch Terminal</span>
+            </a>
+          </div>
+
+          <div class="quick-stats-row">
+            <div class="quick-stat-item">
+              <span class="stat-number" id="stat-repos">37</span>
+              <span class="stat-label">Public Repos</span>
+            </div>
+            <div class="quick-stat-divider"></div>
+            <div class="quick-stat-item">
+              <span class="stat-number">28+</span>
+              <span class="stat-label">TypeScript Projects</span>
+            </div>
+            <div class="quick-stat-divider"></div>
+            <div class="quick-stat-item">
+              <span class="stat-number" id="stat-followers">9</span>
+              <span class="stat-label">Followers</span>
+            </div>
+            <div class="quick-stat-divider"></div>
+            <div class="quick-stat-item">
+              <span class="stat-number">2020</span>
+              <span class="stat-label">Active Since</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO PROFILE CARD (Bento Accent) -->
+        <div class="hero-card-wrapper">
+          <div class="profile-card glass-panel">
+            <div class="profile-header">
+              <div class="avatar-ring">
+                <img src="https://avatars.githubusercontent.com/u/67798618?v=4" alt="Joseph Awer avatar" class="avatar-img" width="96" height="96" loading="eager">
+                <span class="avatar-badge" title="Active GitHub Developer">⚡</span>
+              </div>
+              <div class="profile-titles">
+                <div class="profile-name-row">
+                  <h2 class="profile-handle">@Downspice</h2>
+                  <span class="verified-badge" title="Verified GitHub Account">✓</span>
+                </div>
+                <p class="profile-role">Full-Stack Engineer</p>
+                <a href="https://github.com/Downspice" target="_blank" rel="noopener noreferrer" class="profile-link">
+                  github.com/Downspice ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="profile-meta-grid">
+              <div class="meta-item">
+                <span class="meta-icon">💻</span>
+                <div class="meta-content">
+                  <span class="meta-sub">Primary Language</span>
+                  <strong class="meta-main">TypeScript (85%+)</strong>
+                </div>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">🚀</span>
+                <div class="meta-content">
+                  <span class="meta-sub">Current Focus</span>
+                  <strong class="meta-main">Ticketing & HR Systems</strong>
+                </div>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">📍</span>
+                <div class="meta-content">
+                  <span class="meta-sub">Ecosystem</span>
+                  <strong class="meta-main">Node.js • React • Cloud</strong>
+                </div>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">⚡</span>
+                <div class="meta-content">
+                  <span class="meta-sub">Specialty</span>
+                  <strong class="meta-main">Scalable Architectures</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-actions">
+              <button id="copy-git-clone-btn" class="btn btn-sm btn-glass w-full" data-clipboard="git clone https://github.com/Downspice/portfolio.git">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="clone-btn-text">git clone portfolio.git</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL SECTION -->
+    <section id="terminal" class="terminal-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive CLI</span>
+          <h2 class="section-title">Developer Console</h2>
+          <p class="section-subtitle">Interact with my profile straight from the command line. Type commands or click quick actions below.</p>
+        </div>
+
+        <div class="terminal-window glass-panel">
+          <div class="terminal-header">
+            <div class="terminal-controls">
+              <span class="control-dot dot-red"></span>
+              <span class="control-dot dot-yellow"></span>
+              <span class="control-dot dot-green"></span>
+            </div>
+            <div class="terminal-tab">
+              <span class="tab-icon">🐚</span>
+              <span>downspice@developer-box: ~</span>
+            </div>
+            <div class="terminal-actions">
+              <button class="terminal-action-btn" id="clear-term-btn" title="Clear console">Clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminal-body" tabindex="0" role="region" aria-label="Interactive Terminal Output">
+            <div class="term-line output-system">
+              Welcome to Downspice Shell v2.4.0 (x86_64-apple-darwin)<br>
+              Type <span class="term-highlight">help</span> to view all available commands, or click the quick pills below.
+            </div>
+            <div class="term-line output-banner">
+<pre class="ascii-art">
+  ___                       _          
+ |   \ _____ __ ___ _  ___ (_)__ ___   
+ | |) / _ \ V  V / ' \(_-< | / _/ -_)  
+ |___/\___/\_/\_/|_||_/__/_/ \__\___|  
+                        |__/          
+</pre>
+            </div>
+          </div>
+
+          <div class="terminal-input-bar">
+            <span class="term-prompt-symbol">downspice@git:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="try typing 'skills', 'repos', 'about' or 'stats'..." autocomplete="off" spellcheck="false">
+          </div>
+
+          <div class="terminal-quick-buttons">
+            <span class="quick-label">Quick Commands:</span>
+            <button class="pill-btn" data-command="about">about</button>
+            <button class="pill-btn" data-command="skills">skills</button>
+            <button class="pill-btn" data-command="repos">repos</button>
+            <button class="pill-btn" data-command="stats">stats</button>
+            <button class="pill-btn" data-command="contact">contact</button>
+            <button class="pill-btn" data-command="clear">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL ARSENAL / SKILLS -->
+    <section id="stack" class="stack-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tech Stack</span>
+          <h2 class="section-title">Technical Arsenal</h2>
+          <p class="section-subtitle">Languages, frameworks, and engineering tools I utilize daily to build high-performance products.</p>
+        </div>
+
+        <div class="skills-bento-grid">
+          <!-- Languages -->
+          <div class="bento-card glass-panel">
+            <div class="card-icon-header">
+              <span class="card-icon">⚡</span>
+              <h3>Core Languages</h3>
+            </div>
+            <p class="card-desc">Typed, performant, and scalable foundations.</p>
+            <div class="badges-wrap">
+              <span class="tech-badge featured-badge">
+                <span class="lang-color ts-color"></span> TypeScript
+              </span>
+              <span class="tech-badge">
+                <span class="lang-color js-color"></span> JavaScript (ESNext)
+              </span>
+              <span class="tech-badge">
+                <span class="lang-color cs-color"></span> C#
+              </span>
+              <span class="tech-badge">
+                <span class="lang-color cpp-color"></span> C++
+              </span>
+              <span class="tech-badge">
+                <span class="lang-color html-color"></span> HTML5 / CSS3
+              </span>
+              <span class="tech-badge">
+                <span class="lang-color sql-color"></span> SQL / PostgreSQL
+              </span>
+            </div>
+          </div>
+
+          <!-- Frontend Architecture -->
+          <div class="bento-card glass-panel">
+            <div class="card-icon-header">
+              <span class="card-icon">🎨</span>
+              <h3>Frontend & UI</h3>
+            </div>
+            <p class="card-desc">Crafting responsive, accessible, and delightful interfaces.</p>
+            <div class="badges-wrap">
+              <span class="tech-badge">React.js</span>
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">Tailwind CSS</span>
+              <span class="tech-badge">Vite</span>
+              <span class="tech-badge">Redux / Zustand</span>
+              <span class="tech-badge">CSS Grid & Subgrid</span>
+              <span class="tech-badge">Responsive UX</span>
+            </div>
+          </div>
+
+          <!-- Backend & Cloud -->
+          <div class="bento-card glass-panel">
+            <div class="card-icon-header">
+              <span class="card-icon">🛠️</span>
+              <h3>Backend & Distributed</h3>
+            </div>
+            <p class="card-desc">Reliable APIs, microservices, and databases.</p>
+            <div class="badges-wrap">
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express.js</span>
+              <span class="tech-badge">RESTful APIs</span>
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">Prisma / ORM</span>
+              <span class="tech-badge">JWT & Auth Flow</span>
+              <span class="tech-badge">Microservices</span>
+            </div>
+          </div>
+
+          <!-- DevOps & Workflow -->
+          <div class="bento-card glass-panel">
+            <div class="card-icon-header">
+              <span class="card-icon">🚀</span>
+              <h3>Workflow & Tooling</h3>
+            </div>
+            <p class="card-desc">Modern automation, version control, and CI/CD pipelines.</p>
+            <div class="badges-wrap">
+              <span class="tech-badge">Git & GitHub</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">GitHub Actions</span>
+              <span class="tech-badge">Linux / Unix CLI</span>
+              <span class="tech-badge">Postman</span>
+              <span class="tech-badge">Vitest / Jest</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED REPOSITORIES -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <span class="section-tag">Open Source & Work</span>
+            <h2 class="section-title">Featured Repositories</h2>
+            <p class="section-subtitle">Real-world systems, full-stack backends, and UI client architectures.</p>
+          </div>
+          <div class="repo-filter-tabs">
+            <button class="filter-tab active" data-filter="all">All</button>
+            <button class="filter-tab" data-filter="fullstack">Full-Stack</button>
+            <button class="filter-tab" data-filter="systems">Enterprise & HR</button>
+          </div>
+        </div>
+
+        <div class="repos-grid" id="repos-container">
+          <!-- Card 1: awer-ticketing -->
+          <article class="repo-card glass-panel" data-category="fullstack">
+            <div class="repo-top">
+              <div class="repo-title-row">
+                <svg class="repo-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                  <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+                </svg>
+                <h3 class="repo-name"><a href="https://github.com/Downspice/awer-ticketing" target="_blank" rel="noopener noreferrer">awer-ticketing</a></h3>
+              </div>
+              <span class="badge-public">Public</span>
+            </div>
+            <p class="repo-desc">
+              Comprehensive event and support ticketing platform built with end-to-end type safety, real-time status management, and modular architecture.
+            </p>
+            <div class="repo-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">Ticketing</span>
+              <span class="tag">Full-Stack</span>
+            </div>
+            <div class="repo-footer">
+              <div class="repo-meta">
+                <span class="lang-indicator"><span class="lang-color ts-color"></span> TypeScript</span>
+                <span class="updated-time">Active Today</span>
+              </div>
+              <a href="https://github.com/Downspice/awer-ticketing" target="_blank" rel="noopener noreferrer" class="repo-link-btn" title="View repository">
+                <span>View</span> ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: awer-hr-backend -->
+          <article class="repo-card glass-panel" data-category="systems">
+            <div class="repo-top">
+              <div class="repo-title-row">
+                <svg class="repo-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                  <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8z"/>
+                </svg>
+                <h3 class="repo-name"><a href="https://github.com/Downspice/awer-hr-backend" target="_blank" rel="noopener noreferrer">awer-hr-backend</a></h3>
+              </div>
+              <span class="badge-public">Public</span>
+            </div>
+            <p class="repo-desc">
+              Backend service and domain architecture for HR management, handling employee lifecycles, authentication, role-based permissions, and payroll integrations.
+            </p>
+            <div class="repo-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">HRMS</span>
+            </div>
+            <div class="repo-footer">
+              <div class="repo-meta">
+                <span class="lang-indicator"><span class="lang-color ts-color"></span> TypeScript</span>
+                <span class="updated-time">Production Ready</span>
+              </div>
+              <a href="https://github.com/Downspice/awer-hr-backend" target="_blank" rel="noopener noreferrer" class="repo-link-btn" title="View repository">
+                <span>View</span> ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: ug-alumnisphere -->
+          <article class="repo-card glass-panel" data-category="fullstack">
+            <div class="repo-top">
+              <div class="repo-title-row">
+                <svg class="repo-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                  <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8z"/>
+                </svg>
+                <h3 class="repo-name"><a href="https://github.com/Downspice/ug-alumnisphere-frontend" target="_blank" rel="noopener noreferrer">ug-alumnisphere</a></h3>
+              </div>
+              <span class="badge-public">Public</span>
+            </div>
+            <p class="repo-desc">
+              Alumni network and community platform connecting university graduates with career mentoring, peer directories, and community events.
+            </p>
+            <div class="repo-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Community</span>
+            </div>
+            <div class="repo-footer">
+              <div class="repo-meta">
+                <span class="lang-indicator"><span class="lang-color ts-color"></span> TypeScript</span>
+                <span class="updated-time">Full-Stack</span>
+              </div>
+              <a href="https://github.com/Downspice/ug-alumnisphere-frontend" target="_blank" rel="noopener noreferrer" class="repo-link-btn" title="View repository">
+                <span>View</span> ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: advisory-portal -->
+          <article class="repo-card glass-panel" data-category="systems">
+            <div class="repo-top">
+              <div class="repo-title-row">
+                <svg class="repo-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                  <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8z"/>
+                </svg>
+                <h3 class="repo-name"><a href="https://github.com/Downspice/advisory-portal" target="_blank" rel="noopener noreferrer">advisory-portal</a></h3>
+              </div>
+              <span class="badge-public">Public</span>
+            </div>
+            <p class="repo-desc">
+              Interactive consultation and advisory management system offering automated scheduling, client tracking, and advisor session notes.
+            </p>
+            <div class="repo-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">Portal</span>
+              <span class="tag">Enterprise</span>
+            </div>
+            <div class="repo-footer">
+              <div class="repo-meta">
+                <span class="lang-indicator"><span class="lang-color ts-color"></span> TypeScript</span>
+                <span class="updated-time">Maintained</span>
+              </div>
+              <a href="https://github.com/Downspice/advisory-portal" target="_blank" rel="noopener noreferrer" class="repo-link-btn" title="View repository">
+                <span>View</span> ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5: alphaworld -->
+          <article class="repo-card glass-panel" data-category="systems">
+            <div class="repo-top">
+              <div class="repo-title-row">
+                <svg class="repo-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                  <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8z"/>
+                </svg>
+                <h3 class="repo-name"><a href="https://github.com/Downspice/alphaworld" target="_blank" rel="noopener noreferrer">alphaworld</a></h3>
+              </div>
+              <span class="badge-public">Public</span>
+            </div>
+            <p class="repo-desc">
+              Accessibility-first interactive game engineered to assist dyslexic children in learning alphabets effortlessly using specialized UI principles.
+            </p>
+            <div class="repo-tags">
+              <span class="tag">C#</span>
+              <span class="tag">Accessibility</span>
+              <span class="tag">Game UI</span>
+            </div>
+            <div class="repo-footer">
+              <div class="repo-meta">
+                <span class="lang-indicator"><span class="lang-color cs-color"></span> C#</span>
+                <span class="updated-time">Impact Project</span>
+              </div>
+              <a href="https://github.com/Downspice/alphaworld" target="_blank" rel="noopener noreferrer" class="repo-link-btn" title="View repository">
+                <span>View</span> ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 6: AI-prompt -->
+          <article class="repo-card glass-panel" data-category="fullstack">
+            <div class="repo-top">
+              <div class="repo-title-row">
+                <svg class="repo-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                  <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8z"/>
+                </svg>
+                <h3 class="repo-name"><a href="https://github.com/Downspice/AI-prompt" target="_blank" rel="noopener noreferrer">AI-prompt</a></h3>
+              </div>
+              <span class="badge-public">Public</span>
+            </div>
+            <p class="repo-desc">
+              Next-generation prompt engineering catalog and integration tool interfacing with LLMs for developer productivity and creative workflows.
+            </p>
+            <div class="repo-tags">
+              <span class="tag">AI / LLM</span>
+              <span class="tag">Prompt Systems</span>
+            </div>
+            <div class="repo-footer">
+              <div class="repo-meta">
+                <span class="lang-indicator"><span class="lang-color js-color"></span> AI Tools</span>
+                <span class="updated-time">Research</span>
+              </div>
+              <a href="https://github.com/Downspice/AI-prompt" target="_blank" rel="noopener noreferrer" class="repo-link-btn" title="View repository">
+                <span>View</span> ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB PROFILE README PREVIEW & 1-CLICK GENERATOR -->
+    <section id="readme-preview" class="readme-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Profile Landing Markdown</span>
+          <h2 class="section-title">GitHub Profile README Template</h2>
+          <p class="section-subtitle">
+            This is the exact markdown designed for your <code class="code-pill">Downspice/Downspice</code> special repository. Preview it live or copy it with 1 click!
+          </p>
+        </div>
+
+        <div class="readme-preview-card glass-panel">
+          <div class="readme-toolbar">
+            <div class="readme-tabs">
+              <button class="readme-tab-btn active" id="btn-tab-preview">Visual Preview</button>
+              <button class="readme-tab-btn" id="btn-tab-raw">Raw Markdown</button>
+            </div>
+            <div class="readme-actions">
+              <button class="btn btn-sm btn-primary" id="copy-readme-btn">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="copy-readme-text">Copy Profile README</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- VISUAL PREVIEW OF README -->
+          <div id="readme-visual-view" class="readme-viewport">
+            <div class="readme-mock-document">
+              <!-- Banner SVG -->
+              <div class="readme-banner-mock">
+                <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,15,36,20&height=210&section=header&text=Hi%20there,%20I'm%20Joseph%20Awer%20👋&fontSize=42&fontAlign=50&fontAlignY=45&fontColor=ffffff&desc=Full-Stack%20TypeScript%20Engineer%20•%20Architecting%20Scalable%20Systems&descSize=19&descAlign=50&descAlignY=70" alt="Profile Header Banner" class="banner-img" loading="lazy">
+              </div>
+
+              <!-- Typing badge -->
+              <div class="readme-center-block">
+                <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=64D2FF&center=true&vCenter=true&width=500&lines=Full-Stack+TypeScript+Developer;Specializing+in+Scalable+Cloud+Architectures;Building+Robust+Ticketing+%26+HR+Systems;Open+Source+Enthusiast" alt="Typing SVG" class="typing-img" loading="lazy">
+              </div>
+
+              <div class="readme-intro-block">
+                <h3>👨‍💻 About Me</h3>
+                <ul class="readme-bullets">
+                  <li>🔭 I'm currently architecting scalable applications like <strong>awer-ticketing</strong> and enterprise HR systems</li>
+                  <li>🌱 Deeply specialized in <strong>TypeScript</strong>, <strong>React/Next.js</strong>, and <strong>Node.js backend architectures</strong></li>
+                  <li>💡 Passionate about accessibility (creator of <strong>alphaworld</strong> for dyslexic learners)</li>
+                  <li>⚡ Fun fact: 28+ of my 37 GitHub repositories are built in <strong>TypeScript</strong>!</li>
+                </ul>
+              </div>
+
+              <!-- GitHub Live Stats Cards -->
+              <div class="readme-stats-block">
+                <h3>📊 GitHub Analytics</h3>
+                <div class="readme-stats-grid">
+                  <img src="https://github-readme-stats.vercel.app/api?username=Downspice&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="GitHub Stats" loading="lazy" class="stat-badge-img">
+                  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Downspice&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Top Languages" loading="lazy" class="stat-badge-img">
+                </div>
+                <div class="readme-streak-row">
+                  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Downspice&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" loading="lazy" class="streak-badge-img">
+                </div>
+              </div>
+
+              <div class="readme-badge-block">
+                <h3>🛠️ Tech Arsenal</h3>
+                <div class="shields-row">
+                  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+                  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+                  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
+                  <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next JS">
+                  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS">
+                  <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js">
+                  <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres">
+                  <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+                  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RAW MARKDOWN VIEW -->
+          <div id="readme-raw-view" class="readme-viewport hidden">
+            <pre class="raw-code"><code id="raw-markdown-code"></code></pre>
+          </div>
+        </div>
+
+        <!-- How to use helper card -->
+        <div class="how-to-card glass-panel">
+          <div class="how-to-icon">💡</div>
+          <div class="how-to-content">
+            <h4>How to set this as your GitHub Profile landing page:</h4>
+            <ol class="how-to-steps">
+              <li>Create a new public repository on GitHub named exactly <strong class="code-pill">Downspice</strong> (matching your username).</li>
+              <li>Initialize it with a <strong class="code-pill">README.md</strong>.</li>
+              <li>Click the <strong>"Copy Profile README"</strong> button above, paste the content into that README.md, and commit!</li>
+              <li>Instantly, this aesthetic landing showcase will grace your GitHub homepage for everyone to admire!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & CONNECT -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-card glass-panel">
+          <div class="contact-header">
+            <span class="section-tag">Let's Build Together</span>
+            <h2 class="contact-title">Interested in collaborating or discussing a project?</h2>
+            <p class="contact-subtitle">
+              Whether you have a full-stack engineering position, a TypeScript challenge, or an open-source initiative, my inbox is always open.
+            </p>
+          </div>
+
+          <div class="contact-links-grid">
+            <a href="https://github.com/Downspice" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              <div class="contact-item-info">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/Downspice</span>
+              </div>
+              <span class="contact-arrow">↗</span>
+            </a>
+
+            <a href="mailto:67798618+Downspice@users.noreply.github.com" class="contact-item-card">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-item-info">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">Get in touch</span>
+              </div>
+              <span class="contact-arrow">↗</span>
+            </a>
+
+            <div class="contact-item-card" id="cli-card" role="button" tabindex="0" title="Click to copy CLI command">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <div class="contact-item-info">
+                <span class="contact-label">Terminal Card</span>
+                <span class="contact-value">npx downspice</span>
+              </div>
+              <span class="contact-arrow" id="cli-copy-indicator">📋</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">&lt;Downspice /&gt;</span>
+        <span class="footer-desc">Crafted with modern web standards, semantic HTML, and type safety.</span>
+      </div>
+      <div class="footer-right">
+        <span>© 2026 Joseph Awer (Downspice). Public & Open Source.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

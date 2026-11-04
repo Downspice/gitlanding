@@ -1,0 +1,26 @@
+{
+  "name": "downspice",
+  "version": "1.0.0",
+  "description": "Developer profile landing page and terminal card for Joseph Awer (@Downspice)",
+  "main": "cli.js",
+  "bin": {
+    "downspice": "./cli.js"
+  },
+  "scripts": {
+    "start": "npx serve .",
+    "card": "node cli.js"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "landing-page",
+    "github-profile",
+    "typescript"
+  ],
+  "author": "Joseph Awer (Downspice)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Downspice/gitlanding.git"
+  }
+}
