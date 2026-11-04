@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f14"/>
+      <stop offset="100%" stop-color="#08080b"/>
+    </linearGradient>
+
+    <linearGradient id="lineHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace; }
+
+    @keyframes pulseSoft {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .pulse {
+      animation: pulseSoft 2.5s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- BASE CONTAINER -->
+  <rect width="920" height="420" rx="14" fill="#040406" stroke="#1c1c22" stroke-width="1"/>
+
+  <!-- PANEL 1: awer-ticketing (LARGE SYSTEM CARD - LEFT 540px) -->
+  <g transform="translate(20, 20)">
+    <rect width="520" height="230" rx="12" fill="url(#cardGrad)" stroke="#1F1F27" stroke-width="1"/>
+    <line x1="20" y1="1" x2="500" y2="1" stroke="url(#lineHighlight)" stroke-width="0.8"/>
+
+    <!-- Index & Category -->
+    <g transform="translate(24, 28)">
+      <text x="0" y="0" font-size="10" font-weight="600" fill="#71717A" class="font-mono" letter-spacing="0.1em">01 / EVENT ARCHITECTURE</text>
+      <text x="0" y="28" font-size="20" font-weight="700" fill="#EDEDED" class="font-sans">awer-ticketing</text>
+      <text x="0" y="52" font-size="13" font-weight="400" fill="#8E8E93" class="font-sans">
+        High-throughput event and customer support ticketing platform.
+      </text>
+      <text x="0" y="70" font-size="13" font-weight="400" fill="#8E8E93" class="font-sans">
+        Engineered with strict TypeScript type boundaries and deterministic state management.
+      </text>
+    </g>
+
+    <!-- Pipeline diagram (Framer style state flow) -->
+    <g transform="translate(24, 138)">
+      <rect width="95" height="40" rx="6" fill="#14141c" stroke="#22222d" stroke-width="1"/>
+      <text x="47.5" y="24" font-size="11" font-weight="600" fill="#EDEDED" text-anchor="middle" class="font-mono">Ingest</text>
+
+      <path d="M 103 20 L 122 20" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="2 2"/>
+
+      <rect x="130" y="0" width="95" height="40" rx="6" fill="#14141c" stroke="#22222d" stroke-width="1"/>
+      <text x="177.5" y="24" font-size="11" font-weight="600" fill="#EDEDED" text-anchor="middle" class="font-mono">Process</text>
+
+      <path d="M 233 20 L 252 20" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="2 2"/>
+
+      <rect x="260" y="0" width="95" height="40" rx="6" fill="#14141c" stroke="#22222d" stroke-width="1"/>
+      <text x="307.5" y="24" font-size="11" font-weight="600" fill="#EDEDED" text-anchor="middle" class="font-mono">Route</text>
+
+      <path d="M 363 20 L 382 20" stroke="#00F5A0" stroke-width="1.5"/>
+
+      <rect x="390" y="0" width="75" height="40" rx="6" fill="#0d1f17" stroke="#00F5A0" stroke-opacity="0.4" stroke-width="1"/>
+      <text x="427.5" y="24" font-size="11" font-weight="700" fill="#00F5A0" text-anchor="middle" class="font-mono">Resolve</text>
+    </g>
+
+    <g transform="translate(24, 204)">
+      <circle cx="4" cy="4" r="3" fill="#00F5A0" class="pulse"/>
+      <text x="14" y="7" font-size="10.5" font-weight="600" fill="#00F5A0" class="font-mono">LIVE LIFECYCLE ENGINE</text>
+      <text x="468" y="7" font-size="11" fill="#71717A" text-anchor="end" class="font-mono">TypeScript • REST</text>
+    </g>
+  </g>
+
+  <!-- PANEL 2: awer-hr-backend (RIGHT 320px) -->
+  <g transform="translate(560, 20)">
+    <rect width="340" height="230" rx="12" fill="url(#cardGrad)" stroke="#1F1F27" stroke-width="1"/>
+    <line x1="20" y1="1" x2="320" y2="1" stroke="url(#lineHighlight)" stroke-width="0.8"/>
+
+    <g transform="translate(24, 28)">
+      <text x="0" y="0" font-size="10" font-weight="600" fill="#71717A" class="font-mono" letter-spacing="0.1em">02 / ENTERPRISE CORE</text>
+      <text x="0" y="28" font-size="19" font-weight="700" fill="#EDEDED" class="font-sans">awer-hr-backend</text>
+      <text x="0" y="52" font-size="12.5" font-weight="400" fill="#8E8E93" class="font-sans">
+        Modular employee directory and lifecycle backend service.
+      </text>
+    </g>
+
+    <!-- Technical Specs Checklist -->
+    <g transform="translate(24, 115)">
+      <g transform="translate(0, 0)">
+        <text x="0" y="0" font-size="11" font-weight="700" fill="#3b82f6" class="font-mono">ACID</text>
+        <text x="45" y="0" font-size="12" fill="#EDEDED" class="font-sans">Transactional DB Integrity</text>
+      </g>
+      <g transform="translate(0, 26)">
+        <text x="0" y="0" font-size="11" font-weight="700" fill="#3b82f6" class="font-mono">RBAC</text>
+        <text x="45" y="0" font-size="12" fill="#EDEDED" class="font-sans">Fine-Grained Permissions</text>
+      </g>
+      <g transform="translate(0, 52)">
+        <text x="0" y="0" font-size="11" font-weight="700" fill="#3b82f6" class="font-mono">AUTH</text>
+        <text x="45" y="0" font-size="12" fill="#EDEDED" class="font-sans">JWT &amp; Secure Session Flow</text>
+      </g>
+    </g>
+
+    <g transform="translate(24, 204)">
+      <text x="0" y="7" font-size="11" fill="#71717A" class="font-mono">Node.js • PostgreSQL • Prisma</text>
+    </g>
+  </g>
+
+  <!-- PANEL 3: ug-alumnisphere (BOTTOM LEFT - 430px) -->
+  <g transform="translate(20, 270)">
+    <rect width="430" height="130" rx="12" fill="url(#cardGrad)" stroke="#1F1F27" stroke-width="1"/>
+    <line x1="20" y1="1" x2="410" y2="1" stroke="url(#lineHighlight)" stroke-width="0.8"/>
+
+    <g transform="translate(24, 26)">
+      <text x="0" y="0" font-size="10" font-weight="600" fill="#71717A" class="font-mono" letter-spacing="0.1em">03 / SOCIAL PLATFORM</text>
+      <text x="0" y="24" font-size="16" font-weight="700" fill="#EDEDED" class="font-sans">ug-alumnisphere</text>
+      <text x="0" y="46" font-size="12" font-weight="400" fill="#8E8E93" class="font-sans">
+        Alumni network connecting university graduates with career mentoring.
+      </text>
+      <text x="0" y="76" font-size="11" font-weight="500" fill="#71717A" class="font-mono">
+        TypeScript • React • Microservices
+      </text>
+    </g>
+  </g>
+
+  <!-- PANEL 4: alphaworld (BOTTOM RIGHT - 430px) -->
+  <g transform="translate(470, 270)">
+    <rect width="430" height="130" rx="12" fill="url(#cardGrad)" stroke="#1F1F27" stroke-width="1"/>
+    <line x1="20" y1="1" x2="410" y2="1" stroke="url(#lineHighlight)" stroke-width="0.8"/>
+
+    <g transform="translate(24, 26)">
+      <text x="0" y="0" font-size="10" font-weight="600" fill="#71717A" class="font-mono" letter-spacing="0.1em">04 / ACCESSIBILITY &amp; IMPACT</text>
+      <text x="0" y="24" font-size="16" font-weight="700" fill="#EDEDED" class="font-sans">alphaworld</text>
+      <text x="0" y="46" font-size="12" font-weight="400" fill="#8E8E93" class="font-sans">
+        Assisting dyslexic children learn alphabets with specialized UI principles.
+      </text>
+      <text x="0" y="76" font-size="11" font-weight="500" fill="#71717A" class="font-mono">
+        C# • Accessible UI Design
+      </text>
+    </g>
+  </g>
+</svg>
