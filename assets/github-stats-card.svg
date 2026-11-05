@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 165" width="450" height="165">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090909"/>
+      <stop offset="100%" stop-color="#010101"/>
+    </linearGradient>
+
+    <linearGradient id="topLineGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fdd506" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#fdd506" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#c3fc2f" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <linearGradient id="rankCircle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdd506"/>
+      <stop offset="100%" stop-color="#c3fc2f"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace; }
+
+    @keyframes rankPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .rank-badge {
+      animation: rankPulse 3s ease-in-out infinite;
+      transform-origin: 385px 82px;
+    }
+  </style>
+
+  <!-- Base Card -->
+  <rect width="450" height="165" rx="4" fill="url(#cardBg)" stroke="#1b1b1b" stroke-width="1"/>
+  <line x1="12" y1="1" x2="438" y2="1" stroke="url(#topLineGold)" stroke-width="1"/>
+
+  <!-- Title Header -->
+  <g transform="translate(24, 28)">
+    <text x="0" y="0" font-size="11" font-weight="700" fill="#fdd506" class="font-mono" letter-spacing="0.1em">JOSEPH AWER'S STATS</text>
+  </g>
+
+  <!-- Metrics Column (Left) -->
+  <g transform="translate(24, 52)">
+    <!-- Metric 1: Public Repos -->
+    <g transform="translate(0, 0)">
+      <circle cx="6" cy="6" r="3" fill="#c3fc2f"/>
+      <text x="18" y="9" font-size="11.5" font-weight="500" fill="#d0cec7" class="font-sans">Public Repositories:</text>
+      <text x="175" y="9" font-size="12" font-weight="800" fill="#f8f5ee" class="font-mono">37</text>
+    </g>
+
+    <!-- Metric 2: TypeScript Repos -->
+    <g transform="translate(0, 24)">
+      <circle cx="6" cy="6" r="3" fill="#fdd506"/>
+      <text x="18" y="9" font-size="11.5" font-weight="500" fill="#d0cec7" class="font-sans">TypeScript Ratio:</text>
+      <text x="175" y="9" font-size="12" font-weight="800" fill="#fdd506" class="font-mono">85.4%</text>
+    </g>
+
+    <!-- Metric 3: Active Contributions -->
+    <g transform="translate(0, 48)">
+      <circle cx="6" cy="6" r="3" fill="#c3fc2f"/>
+      <text x="18" y="9" font-size="11.5" font-weight="500" fill="#d0cec7" class="font-sans">Production Systems:</text>
+      <text x="175" y="9" font-size="12" font-weight="800" fill="#f8f5ee" class="font-mono">28+</text>
+    </g>
+
+    <!-- Metric 4: Lifetime Contributor -->
+    <g transform="translate(0, 72)">
+      <circle cx="6" cy="6" r="3" fill="#fdd506"/>
+      <text x="18" y="9" font-size="11.5" font-weight="500" fill="#d0cec7" class="font-sans">Active Since:</text>
+      <text x="175" y="9" font-size="12" font-weight="800" fill="#f8f5ee" class="font-mono">July 2020</text>
+    </g>
+  </g>
+
+  <!-- Rank Badge (Right Side) -->
+  <g class="rank-badge">
+    <g transform="translate(385, 82)">
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#1b1b1b" stroke-width="3"/>
+      <circle cx="0" cy="0" r="36" fill="none" stroke="url(#rankCircle)" stroke-width="3" stroke-dasharray="190" stroke-dashoffset="30" stroke-linecap="round" transform="rotate(-90)"/>
+      <text x="0" y="7" font-size="18" font-weight="900" fill="#fdd506" text-anchor="middle" class="font-mono">A+</text>
+      <text x="0" y="48" font-size="9" font-weight="700" fill="#c3fc2f" text-anchor="middle" class="font-mono" letter-spacing="0.08em">EFFICIENCY</text>
+    </g>
+  </g>
+</svg>

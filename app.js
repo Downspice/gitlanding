@@ -26,7 +26,7 @@ const GITHUB_PROFILE_README = `<div align="center">
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Downspice&show_icons=true&bg_color=010101&title_color=fdd506&text_color=d0cec7&icon_color=c3fc2f&border_color=1b1b1b&hide_border=false" alt="Downspice GitHub Stats" height="165" />
+  <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/github-stats-card.svg" alt="Joseph Awer GitHub Stats" height="165" />
   &nbsp;
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Downspice&background=010101&ring=fdd506&fire=fdd506&currStreakLabel=c3fc2f&sideLabels=74716b&currStreakNum=f8f5ee&sideNums=f8f5ee&dates=74716b&border=1b1b1b" alt="Downspice GitHub Streak" height="165" />
 </div>
