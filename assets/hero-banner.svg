@@ -92,15 +92,14 @@
   <line x1="20" y1="1" x2="900" y2="1" stroke="url(#topEdgeGold)" stroke-width="1.2"/>
 
   <!-- TOP HEADER ROW -->
-  <g transform="translate(36, 24)">
-    <!-- Status Tag -->
-    <rect width="186" height="24" rx="2" fill="#090909" stroke="#1b1b1b" stroke-width="1"/>
-    <circle cx="12" cy="12" r="3.5" fill="#c3fc2f" class="live-dot"/>
-    <text x="24" y="15.5" font-size="10.5" font-weight="700" fill="#f8f5ee" class="font-mono" letter-spacing="0.1em">AVAILABLE FOR HIRE</text>
+  <g transform="translate(36, 26)">
+    <text x="0" y="15.5" font-size="11" font-weight="800" fill="#fdd506" class="font-mono" letter-spacing="0.12em">
+      JOSEPH AWER
+    </text>
 
     <!-- Handle & Year -->
     <text x="848" y="15.5" font-size="11" font-weight="600" fill="#74716b" class="font-mono" text-anchor="end" letter-spacing="0.06em">
-      JOSEPH AWER • @Downspice
+      @Downspice • PORTFOLIO
     </text>
   </g>
 
