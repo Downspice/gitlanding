@@ -18,11 +18,10 @@
 
 <br/>
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/github-stats-card.svg" alt="Joseph Awer GitHub Stats" height="165" />
-  &nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Downspice&background=010101&ring=fdd506&fire=fdd506&currStreakLabel=c3fc2f&sideLabels=74716b&currStreakNum=f8f5ee&sideNums=f8f5ee&dates=74716b&border=1b1b1b" alt="Downspice GitHub Streak" height="165" />
-</div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/github-stats-card.svg" width="49%" alt="Joseph Awer GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Downspice&background=010101&ring=fdd506&fire=fdd506&currStreakLabel=c3fc2f&sideLabels=74716b&currStreakNum=f8f5ee&sideNums=f8f5ee&dates=74716b&border=1b1b1b" width="49%" alt="Downspice GitHub Streak" />
+</p>
 
 <br/>
 
