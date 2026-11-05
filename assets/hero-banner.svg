@@ -1,176 +1,177 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="100%">
   <defs>
     <!-- Base Canvas Gradient -->
-    <linearGradient id="framerBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0b0b0f"/>
-      <stop offset="100%" stop-color="#040406"/>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080808"/>
+      <stop offset="100%" stop-color="#010101"/>
     </linearGradient>
 
-    <!-- Subtle Top Center Glow (Framer Lighting) -->
-    <radialGradient id="topGlow" cx="50%" cy="0%" r="70%">
-      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.18"/>
-      <stop offset="40%" stop-color="#1e1b4b" stop-opacity="0.08"/>
+    <!-- Top Ambient Gold/Lime Diffuse Glow (Matching Portfolio) -->
+    <radialGradient id="topAmbientGlow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#fdd506" stop-opacity="0.16"/>
+      <stop offset="35%" stop-color="#c3fc2f" stop-opacity="0.06"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Precision Card Borders -->
-    <linearGradient id="topEdgeHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    <!-- Hairline Highlights -->
+    <linearGradient id="topEdgeGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fdd506" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#fdd506" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#c3fc2f" stop-opacity="0.05"/>
     </linearGradient>
 
     <linearGradient id="metricCardBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#121217"/>
-      <stop offset="100%" stop-color="#0a0a0d"/>
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#030303"/>
     </linearGradient>
 
-    <!-- Gauge Ring Gradients -->
-    <linearGradient id="gaugeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F5A0"/>
-      <stop offset="100%" stop-color="#00D8F6"/>
+    <!-- Portfolio Signature Dual-Tone: Gold to Lime -->
+    <linearGradient id="goldLime" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fdd506"/>
+      <stop offset="100%" stop-color="#c3fc2f"/>
     </linearGradient>
 
-    <filter id="framerGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
+    <linearGradient id="textGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8f5ee"/>
+      <stop offset="60%" stop-color="#fdd506"/>
+      <stop offset="100%" stop-color="#c3fc2f"/>
+    </linearGradient>
   </defs>
 
   <style>
     .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; }
     .font-mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace; }
 
-    /* Framer Precision Ambient Animation */
-    @keyframes subtleGlow {
-      0%, 100% { opacity: 0.14; }
-      50% { opacity: 0.22; }
+    @keyframes ambientBreath {
+      0%, 100% { opacity: 0.16; }
+      50% { opacity: 0.26; }
     }
 
-    .ambient-light {
-      animation: subtleGlow 6s ease-in-out infinite;
+    .ambient-glow {
+      animation: ambientBreath 5s ease-in-out infinite;
     }
 
-    @keyframes liveDot {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.35; }
+    @keyframes liveBeacon {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.9); }
     }
 
     .live-dot {
-      animation: liveDot 2s ease-in-out infinite;
+      animation: liveBeacon 2s ease-in-out infinite;
+      transform-origin: center;
     }
 
-    @keyframes gaugeSweep {
+    @keyframes sweepGauge {
       0% { stroke-dashoffset: 220; }
       100% { stroke-dashoffset: 45; }
     }
 
     .gauge-circle {
       stroke-dasharray: 220;
-      animation: gaugeSweep 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation: sweepGauge 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
   </style>
 
-  <!-- Outer Frame -->
-  <rect width="920" height="340" rx="16" fill="url(#framerBg)"/>
+  <!-- Canvas Surface -->
+  <rect width="920" height="340" rx="4" fill="url(#bgGrad)"/>
 
-  <!-- Top Ambient Diffuse Lighting -->
-  <rect width="920" height="340" rx="16" fill="url(#topGlow)" class="ambient-light"/>
+  <!-- Top Ambient Warm Gold Glow -->
+  <rect width="920" height="340" rx="4" fill="url(#topAmbientGlow)" class="ambient-glow"/>
 
-  <!-- Precision Technical Grid (1px hairline) -->
-  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
-    <line x1="0" y1="68" x2="920" y2="68"/>
+  <!-- Precision Technical Grid (1px Hairline) -->
+  <g stroke="#f8f5ee" stroke-opacity="0.02" stroke-width="1">
+    <line x1="0" y1="64" x2="920" y2="64"/>
     <line x1="0" y1="210" x2="920" y2="210"/>
     <line x1="280" y1="0" x2="280" y2="340"/>
     <line x1="620" y1="0" x2="620" y2="340"/>
   </g>
 
-  <!-- Card Border -->
-  <rect x="0.5" y="0.5" width="919" height="339" rx="15.5" fill="none" stroke="#22222a" stroke-width="1"/>
-  <!-- Top Highlight Hairline -->
-  <line x1="30" y1="1" x2="890" y2="1" stroke="url(#topEdgeHighlight)" stroke-width="1"/>
+  <!-- Outer Border -->
+  <rect x="0.5" y="0.5" width="919" height="339" rx="3.5" fill="none" stroke="#1b1b1b" stroke-width="1"/>
+  <!-- Gold Top Highlight Line -->
+  <line x1="20" y1="1" x2="900" y2="1" stroke="url(#topEdgeGold)" stroke-width="1.2"/>
 
   <!-- TOP HEADER ROW -->
-  <g transform="translate(36, 26)">
-    <!-- Status Pill -->
-    <rect width="180" height="24" rx="12" fill="#13141a" stroke="#262733" stroke-width="1"/>
-    <circle cx="12" cy="12" r="3.5" fill="#00F5A0" class="live-dot"/>
-    <text x="24" y="15.5" font-size="10.5" font-weight="600" fill="#EDEDED" class="font-mono" letter-spacing="0.08em">AVAILABLE FOR HIRE</text>
+  <g transform="translate(36, 24)">
+    <!-- Status Tag -->
+    <rect width="186" height="24" rx="2" fill="#090909" stroke="#1b1b1b" stroke-width="1"/>
+    <circle cx="12" cy="12" r="3.5" fill="#c3fc2f" class="live-dot"/>
+    <text x="24" y="15.5" font-size="10.5" font-weight="700" fill="#f8f5ee" class="font-mono" letter-spacing="0.1em">AVAILABLE FOR HIRE</text>
 
-    <!-- Handle & Location -->
-    <text x="848" y="15.5" font-size="11" font-weight="500" fill="#71717A" class="font-mono" text-anchor="end" letter-spacing="0.04em">
-      github.com/Downspice • 2026
+    <!-- Handle & Year -->
+    <text x="848" y="15.5" font-size="11" font-weight="600" fill="#74716b" class="font-mono" text-anchor="end" letter-spacing="0.06em">
+      JOSEPH AWER • @Downspice
     </text>
   </g>
 
   <!-- HERO STATEMENT -->
-  <g transform="translate(36, 118)">
-    <text x="0" y="0" font-size="34" font-weight="700" fill="#EDEDED" class="font-sans" letter-spacing="-0.03em">
-      Fast by default. Typed by design.
+  <g transform="translate(36, 116)">
+    <text x="0" y="0" font-size="34" font-weight="800" fill="#f8f5ee" class="font-sans" letter-spacing="-0.03em">
+      Fast by default. <tspan fill="#fdd506">Typed by design.</tspan>
     </text>
-    <text x="0" y="32" font-size="15" font-weight="400" fill="#8E8E93" class="font-sans" letter-spacing="-0.01em">
-      Joseph Awer is a full-stack engineer architecting resilient cloud platforms, ticketing engines, and type-safe systems.
+    <text x="0" y="32" font-size="14.5" font-weight="400" fill="#d0cec7" class="font-sans" letter-spacing="-0.01em">
+      Software Developer specializing in Mobile (Expo) &amp; Full-Stack Web Systems (TypeScript, Next.js, Python).
     </text>
   </g>
 
-  <!-- PERFORMANCE GAUGES & METRIC TILES (BOTTOM ROW) -->
+  <!-- METRIC & PERFORMANCE TILES (BOTTOM ROW) -->
   <g transform="translate(36, 215)">
-    <!-- Tile 1: Type Safety Ratio (Framer Gauge Style) -->
+    <!-- Tile 1: Type Safety Ratio (Gauge Style) -->
     <g transform="translate(0, 0)">
-      <rect width="265" height="95" rx="10" fill="url(#metricCardBg)" stroke="#1F1F27" stroke-width="1"/>
-      <line x1="12" y1="1" x2="253" y2="1" stroke="url(#topEdgeHighlight)" stroke-width="0.8"/>
+      <rect width="265" height="95" rx="2" fill="url(#metricCardBg)" stroke="#1b1b1b" stroke-width="1"/>
+      <line x1="0" y1="0" x2="265" y2="0" stroke="url(#topEdgeGold)" stroke-width="0.8"/>
       
-      <!-- Mini circular gauge -->
+      <!-- Circular Gauge in Gold/Lime -->
       <g transform="translate(42, 48)">
-        <circle cx="0" cy="0" r="28" fill="none" stroke="#1f1f28" stroke-width="4.5"/>
-        <circle cx="0" cy="0" r="28" fill="none" stroke="url(#gaugeGrad)" stroke-width="4.5" stroke-linecap="round" class="gauge-circle" transform="rotate(-90)"/>
-        <text x="0" y="5" font-size="13" font-weight="800" fill="#EDEDED" text-anchor="middle" class="font-mono">85%</text>
+        <circle cx="0" cy="0" r="28" fill="none" stroke="#121212" stroke-width="4.5"/>
+        <circle cx="0" cy="0" r="28" fill="none" stroke="url(#goldLime)" stroke-width="4.5" stroke-linecap="round" class="gauge-circle" transform="rotate(-90)"/>
+        <text x="0" y="5" font-size="13" font-weight="800" fill="#fdd506" text-anchor="middle" class="font-mono">85%</text>
       </g>
 
       <g transform="translate(86, 36)">
-        <text x="0" y="0" font-size="10" font-weight="600" fill="#71717A" class="font-mono" letter-spacing="0.08em">CORE CODEBASE</text>
-        <text x="0" y="18" font-size="15" font-weight="600" fill="#EDEDED" class="font-sans">TypeScript Dominance</text>
-        <text x="0" y="35" font-size="11" fill="#00F5A0" class="font-mono">28+ Repositories</text>
+        <text x="0" y="0" font-size="10" font-weight="700" fill="#74716b" class="font-mono" letter-spacing="0.1em">CORE ECOSYSTEM</text>
+        <text x="0" y="18" font-size="14" font-weight="700" fill="#f8f5ee" class="font-sans">TypeScript First</text>
+        <text x="0" y="35" font-size="11" font-weight="600" fill="#c3fc2f" class="font-mono">28+ Repositories</text>
       </g>
     </g>
 
     <!-- Tile 2: Total Production Repos -->
     <g transform="translate(290, 0)">
-      <rect width="265" height="95" rx="10" fill="url(#metricCardBg)" stroke="#1F1F27" stroke-width="1"/>
-      <line x1="12" y1="1" x2="253" y2="1" stroke="url(#topEdgeHighlight)" stroke-width="0.8"/>
+      <rect width="265" height="95" rx="2" fill="url(#metricCardBg)" stroke="#1b1b1b" stroke-width="1"/>
+      <line x1="0" y1="0" x2="265" y2="0" stroke="url(#topEdgeGold)" stroke-width="0.8"/>
 
       <g transform="translate(20, 36)">
-        <text x="0" y="0" font-size="10" font-weight="600" fill="#71717A" class="font-mono" letter-spacing="0.08em">SYSTEMS SHIPPED</text>
+        <text x="0" y="0" font-size="10" font-weight="700" fill="#74716b" class="font-mono" letter-spacing="0.1em">SYSTEMS SHIPPED</text>
         <g transform="translate(0, 22)">
-          <text x="0" y="0" font-size="30" font-weight="800" fill="#EDEDED" class="font-mono" letter-spacing="-0.03em">37</text>
-          <text x="48" y="-3" font-size="12" font-weight="500" fill="#A1A1AA" class="font-sans">Repositories</text>
+          <text x="0" y="0" font-size="30" font-weight="900" fill="#f8f5ee" class="font-mono" letter-spacing="-0.03em">37</text>
+          <text x="48" y="-3" font-size="12" font-weight="600" fill="#d0cec7" class="font-sans">Repositories</text>
         </g>
-        <text x="0" y="38" font-size="11" fill="#71717A" class="font-mono">Full-stack &amp; Microservices</text>
+        <text x="0" y="38" font-size="11" fill="#74716b" class="font-mono">Full-Stack &amp; Mobile</text>
       </g>
 
-      <!-- Sparkline mini chart -->
+      <!-- Sparkline in Gold -->
       <g transform="translate(180, 48)">
-        <path d="M 0 20 L 15 14 L 30 18 L 45 8 L 60 2" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
-        <circle cx="60" cy="2" r="2.5" fill="#3b82f6"/>
+        <path d="M 0 20 L 15 14 L 30 18 L 45 8 L 60 2" fill="none" stroke="#fdd506" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="60" cy="2" r="3" fill="#c3fc2f"/>
       </g>
     </g>
 
-    <!-- Tile 3: Architecture Benchmark -->
+    <!-- Tile 3: Latency & Architecture -->
     <g transform="translate(580, 0)">
-      <rect width="265" height="95" rx="10" fill="url(#metricCardBg)" stroke="#1F1F27" stroke-width="1"/>
-      <line x1="12" y1="1" x2="253" y2="1" stroke="url(#topEdgeHighlight)" stroke-width="0.8"/>
+      <rect width="265" height="95" rx="2" fill="url(#metricCardBg)" stroke="#1b1b1b" stroke-width="1"/>
+      <line x1="0" y1="0" x2="265" y2="0" stroke="url(#topEdgeGold)" stroke-width="0.8"/>
 
       <g transform="translate(20, 36)">
-        <text x="0" y="0" font-size="10" font-weight="600" fill="#71717A" class="font-mono" letter-spacing="0.08em">LATENCY &amp; ARCHITECTURE</text>
+        <text x="0" y="0" font-size="10" font-weight="700" fill="#74716b" class="font-mono" letter-spacing="0.1em">LATENCY &amp; ARCHITECTURE</text>
         <g transform="translate(0, 22)">
-          <text x="0" y="0" font-size="30" font-weight="800" fill="#EDEDED" class="font-mono" letter-spacing="-0.03em">&lt;50ms</text>
+          <text x="0" y="0" font-size="30" font-weight="900" fill="#f8f5ee" class="font-mono" letter-spacing="-0.03em">&lt;50ms</text>
         </g>
-        <text x="0" y="38" font-size="11" fill="#00F5A0" class="font-mono">Sub-second API response</text>
+        <text x="0" y="38" font-size="11" fill="#c3fc2f" class="font-mono">Sub-second API response</text>
       </g>
 
       <g transform="translate(205, 30)">
-        <rect width="40" height="22" rx="4" fill="#13241c" stroke="#00F5A0" stroke-opacity="0.3" stroke-width="0.8"/>
-        <text x="20" y="15" font-size="10" font-weight="700" fill="#00F5A0" text-anchor="middle" class="font-mono">100</text>
+        <rect width="40" height="22" rx="2" fill="#090909" stroke="#fdd506" stroke-opacity="0.4" stroke-width="1"/>
+        <text x="20" y="15" font-size="10.5" font-weight="800" fill="#fdd506" text-anchor="middle" class="font-mono">100</text>
       </g>
     </g>
   </g>
