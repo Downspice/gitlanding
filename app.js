@@ -171,7 +171,6 @@ function initTerminal() {
   • Public Repositories: 37
   • TypeScript Projects: 28+ (~85% of total codebase)
   • GitHub Member Since: July 2020
-  • Current Status: Available for High-Impact Projects
 `,
     contact: () => `
 <div class="term-success">📬 Connect with Joseph:</div>
