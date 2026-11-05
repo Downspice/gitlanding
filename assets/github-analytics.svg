@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="analyticsBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#010101"/>
+    </linearGradient>
+
+    <!-- Card Background -->
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c0c0c"/>
+      <stop offset="100%" stop-color="#040404"/>
+    </linearGradient>
+
+    <!-- Activity Wave Area Gradient -->
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdd506" stop-opacity="0.32"/>
+      <stop offset="50%" stop-color="#c3fc2f" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#010101" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="waveStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fdd506"/>
+      <stop offset="70%" stop-color="#c3fc2f"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <!-- Top Highlight -->
+    <linearGradient id="topHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fdd506" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#fdd506" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#c3fc2f" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Language Bar Gradients -->
+    <linearGradient id="barTs" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fdd506"/>
+      <stop offset="100%" stop-color="#f5a623"/>
+    </linearGradient>
+
+    <linearGradient id="barJs" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d0cec7"/>
+      <stop offset="100%" stop-color="#f8f5ee"/>
+    </linearGradient>
+
+    <linearGradient id="barCs" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c3fc2f"/>
+      <stop offset="100%" stop-color="#a3e635"/>
+    </linearGradient>
+
+    <linearGradient id="barOther" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f80071"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace; }
+
+    @keyframes pulsePoint {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.6; }
+    }
+
+    .peak-dot {
+      animation: pulsePoint 2.4s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    @keyframes liveBeacon {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+
+    .pulse-dot {
+      animation: liveBeacon 2s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Outer Frame -->
+  <rect width="920" height="360" rx="4" fill="url(#analyticsBg)" stroke="#1b1b1b" stroke-width="1"/>
+  <line x1="20" y1="1" x2="900" y2="1" stroke="url(#topHighlight)" stroke-width="1"/>
+
+  <!-- SECTION HEADER ROW -->
+  <g transform="translate(28, 26)">
+    <text x="0" y="10" font-size="10.5" font-weight="700" fill="#fdd506" class="font-mono" letter-spacing="0.1em">GITHUB METRICS &amp; ACTIVITY</text>
+    <text x="0" y="32" font-size="19" font-weight="800" fill="#f8f5ee" class="font-sans">Contribution Velocity &amp; Codebase Distribution</text>
+    <text x="864" y="24" font-size="11" font-weight="600" fill="#74716b" class="font-mono" text-anchor="end">2020 – 2026 OVERVIEW</text>
+  </g>
+
+  <!-- LEFT PANEL: CONTRIBUTION VELOCITY WAVE (520px width) -->
+  <g transform="translate(24, 76)">
+    <rect width="520" height="260" rx="2" fill="url(#panelBg)" stroke="#1b1b1b" stroke-width="1"/>
+    
+    <g transform="translate(20, 20)">
+      <text x="0" y="0" font-size="10" font-weight="700" fill="#74716b" class="font-mono" letter-spacing="0.1em">ACTIVITY GRAPH</text>
+      <text x="0" y="20" font-size="14" font-weight="700" fill="#f8f5ee" class="font-sans">Shipping Cadence &amp; Commit Waves</text>
+      
+      <!-- Status Badge -->
+      <g transform="translate(370, -6)">
+        <rect width="105" height="22" rx="2" fill="#090909" stroke="#c3fc2f" stroke-opacity="0.4" stroke-width="0.8"/>
+        <circle cx="10" cy="11" r="3" fill="#c3fc2f" class="pulse-dot"/>
+        <text x="20" y="14.5" font-size="9.5" font-weight="700" fill="#c3fc2f" class="font-mono">ACTIVE PUSH</text>
+      </g>
+    </g>
+
+    <!-- CHART AREA -->
+    <g transform="translate(20, 70)">
+      <!-- Grid lines -->
+      <line x1="0" y1="0" x2="480" y2="0" stroke="#161616" stroke-width="1"/>
+      <line x1="0" y1="38" x2="480" y2="38" stroke="#161616" stroke-width="1"/>
+      <line x1="0" y1="76" x2="480" y2="76" stroke="#161616" stroke-width="1"/>
+      <line x1="0" y1="114" x2="480" y2="114" stroke="#161616" stroke-width="1"/>
+
+      <!-- Area Path -->
+      <path d="M 0 110 
+               C 35 105, 55 90, 80 82
+               C 115 70, 140 95, 175 75
+               C 210 55, 235 68, 270 48
+               C 310 25, 345 52, 385 30
+               C 425 8, 455 24, 480 12
+               L 480 120 L 0 120 Z" 
+            fill="url(#waveGrad)"/>
+
+      <!-- Stroke Path -->
+      <path d="M 0 110 
+               C 35 105, 55 90, 80 82
+               C 115 70, 140 95, 175 75
+               C 210 55, 235 68, 270 48
+               C 310 25, 345 52, 385 30
+               C 425 8, 455 24, 480 12" 
+            fill="none" stroke="url(#waveStroke)" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Data Nodes on Curve -->
+      <circle cx="80" cy="82" r="3.5" fill="#fdd506"/>
+      <circle cx="175" cy="75" r="3.5" fill="#fdd506"/>
+      <circle cx="270" cy="48" r="3.5" fill="#fdd506"/>
+      <circle cx="385" cy="30" r="4" fill="#c3fc2f" class="peak-dot"/>
+      <circle cx="480" cy="12" r="4.5" fill="#c3fc2f" class="peak-dot"/>
+
+      <!-- X-Axis Labels -->
+      <g transform="translate(0, 138)">
+        <text x="0" y="0" font-size="10" font-weight="600" fill="#74716b" class="font-mono">2020</text>
+        <text x="80" y="0" font-size="10" font-weight="600" fill="#74716b" class="font-mono">2021</text>
+        <text x="175" y="0" font-size="10" font-weight="600" fill="#74716b" class="font-mono">2022</text>
+        <text x="270" y="0" font-size="10" font-weight="600" fill="#74716b" class="font-mono">2023</text>
+        <text x="365" y="0" font-size="10" font-weight="600" fill="#74716b" class="font-mono">2024</text>
+        <text x="445" y="0" font-size="10" font-weight="700" fill="#fdd506" class="font-mono">CURRENT</text>
+      </g>
+    </g>
+
+    <!-- Footer Meta -->
+    <g transform="translate(20, 236)">
+      <text x="0" y="0" font-size="10.5" font-weight="600" fill="#74716b" class="font-mono">
+        TRACKING: <tspan fill="#f8f5ee">Full-Stack Repositories, Pull Requests &amp; CI Workflows</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- RIGHT PANEL: CODEBASE BREAKDOWN & RATIOS (335px width) -->
+  <g transform="translate(560, 76)">
+    <rect width="335" height="260" rx="2" fill="url(#panelBg)" stroke="#1b1b1b" stroke-width="1"/>
+
+    <g transform="translate(20, 20)">
+      <text x="0" y="0" font-size="10" font-weight="700" fill="#74716b" class="font-mono" letter-spacing="0.1em">LANGUAGE BREAKDOWN</text>
+      <text x="0" y="20" font-size="14" font-weight="700" fill="#f8f5ee" class="font-sans">Production Repositories</text>
+    </g>
+
+    <!-- Language Progress Bars -->
+    <g transform="translate(20, 68)">
+      <!-- 1: TypeScript (85.4%) -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="0" font-size="11" font-weight="700" fill="#fdd506" class="font-mono">TypeScript</text>
+        <text x="295" y="0" font-size="11" font-weight="700" fill="#fdd506" text-anchor="end" class="font-mono">85.4%</text>
+        <rect x="0" y="7" width="295" height="6" rx="1" fill="#141414"/>
+        <rect x="0" y="7" width="252" height="6" rx="1" fill="url(#barTs)"/>
+      </g>
+
+      <!-- 2: JavaScript (6.2%) -->
+      <g transform="translate(0, 32)">
+        <text x="0" y="0" font-size="11" font-weight="600" fill="#d0cec7" class="font-mono">JavaScript</text>
+        <text x="295" y="0" font-size="11" font-weight="600" fill="#d0cec7" text-anchor="end" class="font-mono">6.2%</text>
+        <rect x="0" y="7" width="295" height="6" rx="1" fill="#141414"/>
+        <rect x="0" y="7" width="38" height="6" rx="1" fill="url(#barJs)"/>
+      </g>
+
+      <!-- 3: C# / Game UI (4.8%) -->
+      <g transform="translate(0, 64)">
+        <text x="0" y="0" font-size="11" font-weight="600" fill="#c3fc2f" class="font-mono">C# / C++</text>
+        <text x="295" y="0" font-size="11" font-weight="600" fill="#c3fc2f" text-anchor="end" class="font-mono">4.8%</text>
+        <rect x="0" y="7" width="295" height="6" rx="1" fill="#141414"/>
+        <rect x="0" y="7" width="26" height="6" rx="1" fill="url(#barCs)"/>
+      </g>
+
+      <!-- 4: Python & Systems (3.6%) -->
+      <g transform="translate(0, 96)">
+        <text x="0" y="0" font-size="11" font-weight="600" fill="#f80071" class="font-mono">Python / SQL / Other</text>
+        <text x="295" y="0" font-size="11" font-weight="600" fill="#f80071" text-anchor="end" class="font-mono">3.6%</text>
+        <rect x="0" y="7" width="295" height="6" rx="1" fill="#141414"/>
+        <rect x="0" y="7" width="20" height="6" rx="1" fill="url(#barOther)"/>
+      </g>
+    </g>
+
+    <!-- Mini Bottom Grid -->
+    <g transform="translate(20, 204)">
+      <line x1="0" y1="0" x2="295" y2="0" stroke="#161616" stroke-width="1"/>
+      <g transform="translate(0, 18)">
+        <text x="0" y="0" font-size="18" font-weight="900" fill="#f8f5ee" class="font-mono">37</text>
+        <text x="0" y="14" font-size="9.5" font-weight="600" fill="#74716b" class="font-mono">PUBLIC REPOS</text>
+      </g>
+      <g transform="translate(100, 18)">
+        <text x="0" y="0" font-size="18" font-weight="900" fill="#fdd506" class="font-mono">28+</text>
+        <text x="0" y="14" font-size="9.5" font-weight="600" fill="#74716b" class="font-mono">TYPESCRIPT</text>
+      </g>
+      <g transform="translate(200, 18)">
+        <text x="0" y="0" font-size="18" font-weight="900" fill="#c3fc2f" class="font-mono">2020</text>
+        <text x="0" y="14" font-size="9.5" font-weight="600" fill="#74716b" class="font-mono">FOUNDATION</text>
+      </g>
+    </g>
+  </g>
+</svg>
