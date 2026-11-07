@@ -1,13 +1,67 @@
 <div align="center">
-  <!-- FRAMER-STYLE HERO BANNER -->
-  <a href="https://github.com/Downspice">
-    <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/hero-banner.svg" width="100%" alt="Joseph Awer (@Downspice) — Software Developer" />
+  <!-- BESPOKE BRAND HERO BANNER -->
+  <a href="https://awer-joseph-kweku.vercel.app">
+    <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/hero-banner.svg" width="100%" alt="Joseph Kweku Awer (@Downspice) — Software Developer" />
   </a>
 </div>
 
 <br/>
 
-### GitHub Statistics &amp; Activity Charts
+<p align="center">
+  <a href="https://awer-joseph-kweku.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/PORTFOLIO-LIVE_SITE-fdd506?style=for-the-badge&logo=vercel&logoColor=010101&labelColor=010101" alt="Portfolio" />
+  </a>
+  &nbsp;
+  <a href="mailto:joseph.awer@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-DIRECT-f8f5ee?style=for-the-badge&logo=gmail&logoColor=010101&labelColor=010101" alt="Email" />
+  </a>
+  &nbsp;
+  <a href="https://wa.me/233577210669" target="_blank">
+    <img src="https://img.shields.io/badge/WHATSAPP-CHAT-c3fc2f?style=for-the-badge&logo=whatsapp&logoColor=010101&labelColor=010101" alt="WhatsApp" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/Downspice?tab=repositories">
+    <img src="https://img.shields.io/badge/REPOSITORIES-37+-1b1b1b?style=for-the-badge&logo=github&logoColor=f8f5ee&labelColor=010101" alt="GitHub Repos" />
+  </a>
+</p>
+
+<br/>
+
+### // About Me
+
+> **"Code with culture. Ship with confidence."**  
+> Software Developer specializing in **Mobile (Expo / React Native)** and **Full-Stack Web Systems (Next.js, NestJS, Python)**. Based in **Accra, Ghana 🇬🇭 → Worldwide**.
+
+I build robust, scalable applications that solve real-world problems. My experience spans enterprise logistics and healthcare portals, local-first offline registers, and high-throughput transaction systems with automated payment integrations.
+
+- 🚀 **Currently Building:** High-volume student **Trip Booking System** (NestJS, Prisma, Paystack) & the **Ventos Suite** (Local-first desktop/web POS).
+- ⚡ **Core Philosophy:** Intentional tooling, sub-second latency, typed contracts, and clean, tested code.
+- 💬 **Ask Me About:** TypeScript architectures, Expo mobile deployments, NestJS microservices, and local-first software.
+
+<br/>
+
+### // Flagship Systems & Codebases
+
+| Project / System | Focus & Architecture | Primary Stack | Status |
+| :--- | :--- | :--- | :---: |
+| **[Ventos Suite](https://github.com/Downspice)** | Local-first desktop POS register, real-time store telemetry & web operations hub | `Flutter` `Dart` `React` `TypeScript` | `Active` |
+| **[Awer Ticketing](https://github.com/Downspice/awer-ticketing)** | Enterprise customer support, ticket dispatching & event issue tracking platform | `Next.js` `TypeScript` `PostgreSQL` | `Production` |
+| **[Trip Booking Engine](https://github.com/Downspice)** | School & transit travel booking, seat allocation & automated Paystack integration | `NestJS` `Prisma` `Paystack` `Next.js` | `In Flight` |
+| **[Enterprise Health & TBMS](https://github.com/Downspice)** | National Health Insurance (NHIA) credentialing portals & tyre/battery fleet system | `React` `Java Spring` `Python` | `Shipped` |
+| **[AlphaWorld](https://github.com/Downspice/alphaworld)** | Interactive educational software engineered for dyslexic and neurodivergent learners | `C#` `Unity` | `Open Source` |
+
+<br/>
+
+### // Technical Arsenal & Stack
+
+<div align="center">
+  <!-- TECH SPECIFICATION MATRIX -->
+  <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/stack-matrix.svg" width="100%" alt="Technical Stack &amp; Dependencies" />
+</div>
+
+<br/>
+
+### // GitHub Velocity & Activity
 
 <div align="center">
   <!-- GITHUB ANALYTICS DASHBOARD & CHARTS (PORTFOLIO THEME) -->
@@ -25,26 +79,32 @@
 
 <br/>
 
-### Technical Stack &amp; Infrastructure
+### // Developer Terminal
 
-<div align="center">
-  <!-- TECH SPECIFICATION MATRIX -->
-  <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/stack-matrix.svg" width="100%" alt="Technical Stack &amp; Dependencies" />
-</div>
+Run the interactive terminal card directly on your machine:
+
+```bash
+npx downspice
+```
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   Joseph Kweku Awer / @Downspice                            │
+│   Software Developer • Mobile (Expo) & Full-Stack Systems   │
+│                                                             │
+│   Portfolio:  https://awer-joseph-kweku.vercel.app          │
+│   GitHub:     https://github.com/Downspice                  │
+│   Stack:      TypeScript, Expo, Next.js, NestJS, Python     │
+│   Systems:    Ventos Suite, Awer Ticketing, Trip Engine     │
+│                                                             │
+│   "Code with culture. Ship with confidence."                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
 
 <br/>
 
-### Developer Console &amp; Index
-
 <div align="center">
-  <!-- TERMINAL CARD -->
-  <a href="https://github.com/Downspice">
-    <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/terminal-card.svg" width="100%" alt="Developer Terminal &amp; Connect" />
-  </a>
-</div>
-
-<br/>
-
-<div align="center">
-  <sub>JOSEPH AWER (@Downspice) • SOFTWARE DEVELOPER • SHIPPED WITH PRECISION</sub>
+  <sub>FOR THE CULTURE / BY THE CODE • ACCRA, GHANA • © 2026 JOSEPH KWEKU AWER</sub>
 </div>
