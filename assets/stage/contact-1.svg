@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 64" width="180" height="64" role="img" aria-label="EMAIL"><title>EMAIL</title><style>
+.slamL{animation:slamL .45s cubic-bezier(.2,1.4,.4,1)}
+.slamR{animation:slamR .45s cubic-bezier(.2,1.4,.4,1)}
+@keyframes slamL{from{transform:translateX(-1040px)}to{transform:none}}
+@keyframes slamR{from{transform:translateX(1040px)}to{transform:none}}
+.drop{animation:drop .5s cubic-bezier(.2,1.6,.4,1)}
+@keyframes drop{from{transform:translateY(-280px);opacity:0}to{transform:none;opacity:1}}
+.blink{animation:blink 1.05s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.type{transform-box:fill-box;transform-origin:0 50%;animation:type linear both}
+@keyframes type{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.marquee{animation:marquee linear infinite}
+@keyframes marquee{to{transform:translateX(var(--d))}}
+.sweep{animation:sweep 6.5s ease-in-out infinite}
+@keyframes sweep{0%,12%{opacity:0}18%,38%{opacity:1}46%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important}
+}
+</style>
+<g transform="rotate(4 90 32)">
+  <g class="drop" style="animation-delay:0.14s">
+    <polygon points="12,12 172,8 166,54 8,56" fill="#F5C400" transform="translate(5,4)"/>
+    <polygon points="12,12 172,8 166,54 8,56" fill="#000" stroke="#000" stroke-width="2"/>
+    <text x="90" y="40" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="16" fill="#fff" text-anchor="middle">EMAIL</text>
+  </g>
+</g>
+</svg>

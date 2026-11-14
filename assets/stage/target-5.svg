@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 60" width="900" height="60" role="img" aria-label="AI PROMPT: Prompt catalog that links developer workflows to next-generation AI."><title>AI PROMPT: Prompt catalog that links developer workflows to next-generation AI.</title><style>
+.slamL{animation:slamL .45s cubic-bezier(.2,1.4,.4,1)}
+.slamR{animation:slamR .45s cubic-bezier(.2,1.4,.4,1)}
+@keyframes slamL{from{transform:translateX(-1040px)}to{transform:none}}
+@keyframes slamR{from{transform:translateX(1040px)}to{transform:none}}
+.drop{animation:drop .5s cubic-bezier(.2,1.6,.4,1)}
+@keyframes drop{from{transform:translateY(-280px);opacity:0}to{transform:none;opacity:1}}
+.blink{animation:blink 1.05s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.type{transform-box:fill-box;transform-origin:0 50%;animation:type linear both}
+@keyframes type{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.marquee{animation:marquee linear infinite}
+@keyframes marquee{to{transform:translateX(var(--d))}}
+.sweep{animation:sweep 6.5s ease-in-out infinite}
+@keyframes sweep{0%,12%{opacity:0}18%,38%{opacity:1}46%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important}
+}
+</style>
+<g class="slamR" style="animation-delay:0.33s">
+  <g class="sweep">
+    <polygon points="48,6 760,0 744,56 36,58" fill="#fff" stroke="#000" stroke-width="2"/>
+    <polygon points="58,11 748,6 734,51 48,53" fill="#FFE500"/>
+    <text x="16" y="40" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="22" fill="#FFE500" stroke="#000" stroke-width="1.5" paint-order="stroke">▶</text>
+  </g>
+  <g transform="translate(70,13) skewX(-12)">
+    <rect x="5" y="4" width="680" height="34" fill="#F5C400"/>
+    <rect width="680" height="34" fill="#000" stroke="#fff" stroke-width="2"/>
+    <text x="16" y="24" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="18" fill="#fff">AI PROMPT</text>
+    <text x="664" y="23" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="12" font-weight="700" fill="#fff" text-anchor="end">AI</text>
+  </g>
+</g>
+</svg>

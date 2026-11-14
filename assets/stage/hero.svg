@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" role="img" aria-label="Joseph Awer (@Downspice), software developer. 45 public repos, 9 followers, on GitHub since 2020."><title>Joseph Awer (@Downspice), software developer. 45 public repos, 9 followers, on GitHub since 2020.</title><style>
+.slamL{animation:slamL .45s cubic-bezier(.2,1.4,.4,1)}
+.slamR{animation:slamR .45s cubic-bezier(.2,1.4,.4,1)}
+@keyframes slamL{from{transform:translateX(-1040px)}to{transform:none}}
+@keyframes slamR{from{transform:translateX(1040px)}to{transform:none}}
+.drop{animation:drop .5s cubic-bezier(.2,1.6,.4,1)}
+@keyframes drop{from{transform:translateY(-280px);opacity:0}to{transform:none;opacity:1}}
+.blink{animation:blink 1.05s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.type{transform-box:fill-box;transform-origin:0 50%;animation:type linear both}
+@keyframes type{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.marquee{animation:marquee linear infinite}
+@keyframes marquee{to{transform:translateX(var(--d))}}
+.sweep{animation:sweep 6.5s ease-in-out infinite}
+@keyframes sweep{0%,12%{opacity:0}18%,38%{opacity:1}46%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important}
+}
+</style>
+<defs>
+  <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1.6" fill="#000" fill-opacity=".22"/>
+  </pattern>
+  <clipPath id="frame"><rect width="900" height="380" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#frame)">
+  <rect width="900" height="380" fill="#FFE500"/>
+  <g fill="#000" fill-opacity=".2"><path d="M760.0,188.0 L1671.0,60.0 L1675.0,284.2 Z"/><path d="M760.0,188.0 L1659.9,379.3 L1586.9,591.3 Z"/><path d="M760.0,188.0 L1540.2,675.5 L1399.1,849.8 Z"/><path d="M760.0,188.0 L1326.4,913.0 L1134.2,1028.5 Z"/><path d="M760.0,188.0 L1044.3,1063.0 L824.2,1105.8 Z"/><path d="M760.0,188.0 L727.9,1107.4 L506.4,1072.4 Z"/><path d="M760.0,188.0 L415.4,1041.0 L219.2,932.3 Z"/><path d="M760.0,188.0 L144.4,871.7 L-2.7,702.5 Z"/><path d="M760.0,188.0 L-52.3,619.9 L-132.7,410.6 Z"/><path d="M760.0,188.0 L-151.0,316.0 L-155.0,91.8 Z"/><path d="M760.0,188.0 L-139.9,-3.3 L-66.9,-215.3 Z"/><path d="M760.0,188.0 L-20.2,-299.5 L120.9,-473.8 Z"/><path d="M760.0,188.0 L193.6,-537.0 L385.8,-652.5 Z"/><path d="M760.0,188.0 L475.7,-687.0 L695.8,-729.8 Z"/><path d="M760.0,188.0 L792.1,-731.4 L1013.6,-696.4 Z"/><path d="M760.0,188.0 L1104.6,-665.0 L1300.8,-556.3 Z"/><path d="M760.0,188.0 L1375.6,-495.7 L1522.7,-326.5 Z"/><path d="M760.0,188.0 L1572.3,-243.9 L1652.7,-34.6 Z"/></g>
+  <rect width="900" height="380" fill="url(#dots)"/>
+  <g class="slamL">
+    <polygon points="0,0 640,0 618,48 634,54 600,190 616,198 560,380 0,380" fill="#fff"/>
+    <polygon points="0,0 620,0 598,44 614,50 580,186 596,194 540,380 0,380" fill="#000"/>
+  </g>
+  <g transform="translate(58.0,108) rotate(-5)"><g class="drop" style="animation-delay:0.15s"><rect x="-19.2" y="-26.6" width="48.4" height="65.1" fill="#000" opacity=".35"/><rect x="-24.2" y="-32.6" width="48.4" height="65.1" fill="#fff" stroke="#000" stroke-width="2"/><text y="21.1" font-size="62" fill="#000" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" text-anchor="middle">J</text></g></g><g transform="translate(115.0,108) rotate(3)"><g class="drop" style="animation-delay:0.21s"><rect x="-19.2" y="-26.6" width="48.4" height="65.1" fill="#000" opacity=".35"/><rect x="-24.2" y="-32.6" width="48.4" height="65.1" fill="#FFE500" stroke="#000" stroke-width="2"/><text y="21.1" font-size="62" fill="#000" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" text-anchor="middle">O</text></g></g><g transform="translate(172.1,108) rotate(-2)"><g class="drop" style="animation-delay:0.27s"><rect x="-19.2" y="-26.6" width="48.4" height="65.1" fill="#000" opacity=".35"/><rect x="-24.2" y="-32.6" width="48.4" height="65.1" fill="#000" stroke="#000" stroke-width="2"/><text y="21.1" font-size="62" fill="#fff" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" text-anchor="middle">S</text></g></g><g transform="translate(229.1,108) rotate(4)"><g class="drop" style="animation-delay:0.33s"><rect x="-19.2" y="-26.6" width="48.4" height="65.1" fill="#000" opacity=".35"/><rect x="-24.2" y="-32.6" width="48.4" height="65.1" fill="#fff" stroke="#000" stroke-width="2"/><text y="21.1" font-size="62" fill="#000" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" text-anchor="middle">E</text></g></g><g transform="translate(286.2,108) rotate(-3)"><g class="drop" style="animation-delay:0.39s"><rect x="-19.2" y="-26.6" width="48.4" height="65.1" fill="#000" opacity=".35"/><rect x="-24.2" y="-32.6" width="48.4" height="65.1" fill="#FFE500" stroke="#000" stroke-width="2"/><text y="21.1" font-size="62" fill="#000" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" text-anchor="middle">P</text></g></g><g transform="translate(343.2,108) rotate(2)"><g class="drop" style="animation-delay:0.45s"><rect x="-19.2" y="-26.6" width="48.4" height="65.1" fill="#000" opacity=".35"/><rect x="-24.2" y="-32.6" width="48.4" height="65.1" fill="#000" stroke="#000" stroke-width="2"/><text y="21.1" font-size="62" fill="#fff" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" text-anchor="middle">H</text></g></g>
+  <g transform="translate(58.0,196) rotate(-5)"><g class="drop" style="animation-delay:0.55s"><rect x="-19.2" y="-26.6" width="48.4" height="65.1" fill="#000" opacity=".35"/><rect x="-24.2" y="-32.6" width="48.4" height="65.1" fill="#fff" stroke="#000" stroke-width="2"/><text y="21.1" font-size="62" fill="#000" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" text-anchor="middle">A</text></g></g><g transform="translate(115.0,196) rotate(3)"><g class="drop" style="animation-delay:0.61s"><rect x="-19.2" y="-26.6" width="48.4" height="65.1" fill="#000" opacity=".35"/><rect x="-24.2" y="-32.6" width="48.4" height="65.1" fill="#FFE500" stroke="#000" stroke-width="2"/><text y="21.1" font-size="62" fill="#000" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" text-anchor="middle">W</text></g></g><g transform="translate(172.1,196) rotate(-2)"><g class="drop" style="animation-delay:0.67s"><rect x="-19.2" y="-26.6" width="48.4" height="65.1" fill="#000" opacity=".35"/><rect x="-24.2" y="-32.6" width="48.4" height="65.1" fill="#000" stroke="#000" stroke-width="2"/><text y="21.1" font-size="62" fill="#fff" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" text-anchor="middle">E</text></g></g><g transform="translate(229.1,196) rotate(4)"><g class="drop" style="animation-delay:0.73s"><rect x="-19.2" y="-26.6" width="48.4" height="65.1" fill="#000" opacity=".35"/><rect x="-24.2" y="-32.6" width="48.4" height="65.1" fill="#fff" stroke="#000" stroke-width="2"/><text y="21.1" font-size="62" fill="#000" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" text-anchor="middle">R</text></g></g>
+  <g class="slamL" style="animation-delay:.35s">
+    <g transform="translate(36,248) skewX(-14)">
+      <rect width="430" height="36" fill="#fff"/>
+      <text x="16" y="26" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="20" fill="#000" letter-spacing="0.5">SOFTWARE DEVELOPER</text>
+    </g>
+    <text x="40" y="316" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#fff">TYPESCRIPT  ▸  EXPO  ▸  NEXT.JS  ▸  NESTJS  ▸  PYTHON</text>
+    <text x="40" y="352" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#fff" opacity=".78">SYS://APP-RUNTIME ONLINE   ·   LOC: ACCRA   ·   <tspan class="blink">█</tspan></text>
+  </g>
+  <g transform="translate(690,96) rotate(-6)">
+    <g class="drop" style="animation-delay:.4s">
+      <polygon points="-78,-48 82,-54 74,46 -74,52" fill="#000" transform="translate(6,6)"/>
+      <polygon points="-78,-48 82,-54 74,46 -74,52" fill="#fff"/>
+      <text y="8" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="40" fill="#000" text-anchor="middle">45</text>
+      <text y="32" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="12" font-weight="700" fill="#000" text-anchor="middle" letter-spacing="2">REPOS</text>
+    </g>
+  </g>
+  <g transform="translate(812,198) rotate(5)">
+    <g class="drop" style="animation-delay:.55s">
+      <polygon points="-78,-48 82,-54 74,46 -74,52" fill="#000" transform="translate(6,6)"/>
+      <polygon points="-78,-48 82,-54 74,46 -74,52" fill="#000"/>
+      <text y="8" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="40" fill="#fff" text-anchor="middle">9</text>
+      <text y="32" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="2">FOLLOWERS</text>
+    </g>
+  </g>
+  <g transform="translate(688,292) rotate(-3)">
+    <g class="drop" style="animation-delay:.7s">
+      <polygon points="-78,-48 82,-54 74,46 -74,52" fill="#000" transform="translate(6,6)"/>
+      <polygon points="-78,-48 82,-54 74,46 -74,52" fill="#000"/>
+      <text y="8" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="36" fill="#FFE500" text-anchor="middle">2020</text>
+      <text y="32" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="12" font-weight="700" fill="#FFE500" text-anchor="middle" letter-spacing="2">SINCE</text>
+    </g>
+  </g>
+</g>
+</svg>
