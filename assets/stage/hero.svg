@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" role="img" aria-label="Joseph Awer (@Downspice), software developer. 45 public repos, 9 followers, on GitHub since 2020."><title>Joseph Awer (@Downspice), software developer. 45 public repos, 9 followers, on GitHub since 2020.</title><style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" role="img" aria-label="Joseph Awer (@Downspice), software engineer. 45 public repos, 9 followers, on GitHub since 2020."><title>Joseph Awer (@Downspice), software engineer. 45 public repos, 9 followers, on GitHub since 2020.</title><style>
 .slamL{animation:slamL .45s cubic-bezier(.2,1.4,.4,1)}
 .slamR{animation:slamR .45s cubic-bezier(.2,1.4,.4,1)}
 @keyframes slamL{from{transform:translateX(-1040px)}to{transform:none}}
@@ -36,7 +36,7 @@
   <g class="slamL" style="animation-delay:.35s">
     <g transform="translate(36,248) skewX(-14)">
       <rect width="430" height="36" fill="#fff"/>
-      <text x="16" y="26" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="20" fill="#000" letter-spacing="0.5">SOFTWARE DEVELOPER</text>
+      <text x="16" y="26" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="20" fill="#000" letter-spacing="0.5">SOFTWARE ENGINEER</text>
     </g>
     <text x="40" y="316" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#fff">TYPESCRIPT  ▸  EXPO  ▸  NEXT.JS  ▸  NESTJS  ▸  PYTHON</text>
     <text x="40" y="352" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#fff" opacity=".78">SYS://APP-RUNTIME ONLINE   ·   LOC: ACCRA   ·   <tspan class="blink">█</tspan></text>

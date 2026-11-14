@@ -8,7 +8,7 @@
 const GITHUB_PROFILE_README = `<div align="center">
   <!-- BESPOKE BRAND HERO BANNER -->
   <a href="https://awer-joseph-kweku.vercel.app">
-    <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/hero-banner.svg" width="100%" alt="Joseph Kweku Awer (@Downspice) — Software Developer" />
+    <img src="https://raw.githubusercontent.com/Downspice/Downspice/main/assets/hero-banner.svg" width="100%" alt="Joseph Kweku Awer (@Downspice) — Software Engineer" />
   </a>
 </div>
 
@@ -37,7 +37,7 @@ const GITHUB_PROFILE_README = `<div align="center">
 ### // About Me
 
 > **"Code with culture. Ship with confidence."**  
-> Software Developer specializing in **Mobile (Expo / React Native)** and **Full-Stack Web Systems (Next.js, NestJS, Python)**. Based in **Accra, Ghana 🇬🇭 → Worldwide**.
+> Software Engineer specializing in **Mobile (Expo / React Native)** and **Full-Stack Web Systems (Next.js, NestJS, Python)**. Based in **Accra, Ghana 🇬🇭 → Worldwide**.
 
 I build robust, scalable applications that solve real-world problems. My experience spans enterprise logistics and healthcare portals, local-first offline registers, and high-throughput transaction systems with automated payment integrations.
 
@@ -98,7 +98,7 @@ npx downspice
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   Joseph Kweku Awer / @Downspice                            │
-│   Software Developer • Mobile (Expo) & Full-Stack Systems   │
+│   Software Engineer • Mobile (Expo) & Full-Stack Systems   │
 │                                                             │
 │   Portfolio:  https://awer-joseph-kweku.vercel.app          │
 │   GitHub:     https://github.com/Downspice                  │

@@ -9,7 +9,7 @@ const card = `
 \x1b[33m┌─────────────────────────────────────────────────────────────┐\x1b[0m
 \x1b[33m│\x1b[0m                                                             \x1b[33m│\x1b[0m
 \x1b[33m│\x1b[0m   \x1b[1m\x1b[37mJoseph Kweku Awer\x1b[0m / \x1b[1m\x1b[33m@Downspice\x1b[0m                            \x1b[33m│\x1b[0m
-\x1b[33m│\x1b[0m   \x1b[90mSoftware Developer • Mobile (Expo) & Full-Stack Systems\x1b[0m   \x1b[33m│\x1b[0m
+\x1b[33m│\x1b[0m   \x1b[90mSoftware Engineer • Mobile (Expo) & Full-Stack Systems\x1b[0m   \x1b[33m│\x1b[0m
 \x1b[33m│\x1b[0m                                                             \x1b[33m│\x1b[0m
 \x1b[33m│\x1b[0m   \x1b[1m\x1b[32mPortfolio:\x1b[0m  https://awer-joseph-kweku.vercel.app          \x1b[33m│\x1b[0m
 \x1b[33m│\x1b[0m   \x1b[1m\x1b[32mGitHub:\x1b[0m     https://github.com/Downspice                  \x1b[33m│\x1b[0m

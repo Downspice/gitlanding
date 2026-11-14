@@ -1,6 +1,6 @@
-<p align="center"><img src="assets/stage/hero.svg" width="100%" alt="Joseph Awer (@Downspice), software developer. 45 public repos, 9 followers, on GitHub since 2020." /></p>
+<p align="center"><img src="assets/stage/hero.svg" width="100%" alt="Joseph Awer (@Downspice), software engineer. 45 public repos, 9 followers, on GitHub since 2020." /></p>
 
-<p align="center"><img src="assets/stage/about.svg" width="100%" alt="Software developer in Accra. Mobile with Expo and React Native, full-stack web with Next.js, NestJS, and Python. I ship typed systems for logistics, health portals, and local-first tools. Code with culture. Ship with confidence." /></p>
+<p align="center"><img src="assets/stage/about.svg" width="100%" alt="Software engineer in Accra. Mobile with Expo and React Native, full-stack web with Next.js, NestJS, and Python. I ship typed systems for logistics, health portals, and local-first tools. Code with culture. Ship with confidence." /></p>
 
 <p align="center"><img src="assets/stage/h-targets.svg" width="100%" alt="Select target" /><br>
 <a href="https://github.com/Downspice/awer-ticketing"><img src="assets/stage/target-0.svg" width="100%" alt="AWER TICKETING: Event and support ticketing platform with end-to-end type safety." /></a><br>
